@@ -14,605 +14,19 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image" href="favicon.ico">
 	<!-- CSS -->
-    <link rel="stylesheet" id="main-style-css" href="source/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="slick-css" href="source/slick.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fancySelect-css" href="source/fancySelect.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fancybox-css" href="source/jquery.fancybox.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="style-css" href="source/style(1).css" type="text/css" media="all">
-    <link rel="stylesheet" id="new-css" href="source/new.css" type="text/css" media="all">
-    <link rel="stylesheet" id="custom-style-css" href="source/custom.css" type="text/css" media="all">
-	<!-- JS -->
-    <script src="source/tag_phone.js" type="text/javascript" charset="utf-8" async=""></script>
-    <script src="source/tag_phono.js" type="text/javascript" charset="utf-8" async=""></script>
-    <link rel="https://api.w.org/" href="https://demontazh-servis.ru/wp-json/">
-    <link rel="alternate" title="JSON" type="application/json" href="https://demontazh-servis.ru/wp-json/wp/v2/pages/2">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demontazh-servis.ru/xmlrpc.php?rsd">
-    <link rel="shortlink" href="https://demontazh-servis.ru/">
-    <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
-        img:is([sizes=auto i], [sizes^="auto,"i]) {
-            contain-intrinsic-size: 3000px 1500px
-        }
-        /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-    </style>
-    <style id="wp-emoji-styles-inline-css" type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 0.07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-        /*# sourceURL=wp-emoji-styles-inline-css */
-    </style>
-    <style id="wp-block-library-inline-css" type="text/css">
-        :root {
-            --wp-block-synced-color: #7a00df;
-            --wp-block-synced-color--rgb: 122, 0, 223;
-            --wp-bound-block-color: var(--wp-block-synced-color);
-            --wp-editor-canvas-background: #ddd;
-            --wp-admin-theme-color: #007cba;
-            --wp-admin-theme-color--rgb: 0, 124, 186;
-            --wp-admin-theme-color-darker-10: #006ba1;
-            --wp-admin-theme-color-darker-10--rgb: 0, 107, 160.5;
-            --wp-admin-theme-color-darker-20: #005a87;
-            --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
-            --wp-admin-border-width-focus: 2px
-        }
-        @media (min-resolution:192dpi) {
-            :root {
-                --wp-admin-border-width-focus: 1.5px
-            }
-        }
-        .wp-element-button {
-            cursor: pointer
-        }
-        :root .has-very-light-gray-background-color {
-            background-color: #eee
-        }
-        :root .has-very-dark-gray-background-color {
-            background-color: #313131
-        }
-        :root .has-very-light-gray-color {
-            color: #eee
-        }
-        :root .has-very-dark-gray-color {
-            color: #313131
-        }
-        :root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background {
-            background: linear-gradient(135deg, #00d084, #0693e3)
-        }
-        :root .has-purple-crush-gradient-background {
-            background: linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe)
-        }
-        :root .has-hazy-dawn-gradient-background {
-            background: linear-gradient(135deg, #faaca8, #dad0ec)
-        }
-        :root .has-subdued-olive-gradient-background {
-            background: linear-gradient(135deg, #fafae1, #67a671)
-        }
-        :root .has-atomic-cream-gradient-background {
-            background: linear-gradient(135deg, #fdd79a, #004a59)
-        }
-        :root .has-nightshade-gradient-background {
-            background: linear-gradient(135deg, #330968, #31cdcf)
-        }
-        :root .has-midnight-gradient-background {
-            background: linear-gradient(135deg, #020381, #2874fc)
-        }
-        :root {
-            --wp--preset--font-size--normal: 16px;
-            --wp--preset--font-size--huge: 42px
-        }
-        .has-regular-font-size {
-            font-size: 1em
-        }
-        .has-larger-font-size {
-            font-size: 2.625em
-        }
-        .has-normal-font-size {
-            font-size: var(--wp--preset--font-size--normal)
-        }
-        .has-huge-font-size {
-            font-size: var(--wp--preset--font-size--huge)
-        }
-        .has-text-align-center {
-            text-align: center
-        }
-        .has-text-align-left {
-            text-align: left
-        }
-        .has-text-align-right {
-            text-align: right
-        }
-        .has-fit-text {
-            white-space: nowrap !important
-        }
-        #end-resizable-editor-section {
-            display: none
-        }
-        .aligncenter {
-            clear: both
-        }
-        .items-justified-left {
-            justify-content: flex-start
-        }
-        .items-justified-center {
-            justify-content: center
-        }
-        .items-justified-right {
-            justify-content: flex-end
-        }
-        .items-justified-space-between {
-            justify-content: space-between
-        }
-        .screen-reader-text {
-            border: 0;
-            clip-path: inset(50%);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-            word-wrap: normal !important
-        }
-        .screen-reader-text:focus {
-            background-color: #ddd;
-            clip-path: none;
-            color: #444;
-            display: block;
-            font-size: 1em;
-            height: auto;
-            left: 5px;
-            line-height: normal;
-            padding: 15px 23px 14px;
-            text-decoration: none;
-            top: 5px;
-            width: auto;
-            z-index: 100000
-        }
-        html :where(.has-border-color) {
-            border-style: solid
-        }
-        html :where([style*=border-top-color]) {
-            border-top-style: solid
-        }
-        html :where([style*=border-right-color]) {
-            border-right-style: solid
-        }
-        html :where([style*=border-bottom-color]) {
-            border-bottom-style: solid
-        }
-        html :where([style*=border-left-color]) {
-            border-left-style: solid
-        }
-        html :where([style*=border-width]) {
-            border-style: solid
-        }
-        html :where([style*=border-top-width]) {
-            border-top-style: solid
-        }
-        html :where([style*=border-right-width]) {
-            border-right-style: solid
-        }
-        html :where([style*=border-bottom-width]) {
-            border-bottom-style: solid
-        }
-        html :where([style*=border-left-width]) {
-            border-left-style: solid
-        }
-        html :where(img[class*=wp-image-]) {
-            height: auto;
-            max-width: 100%
-        }
-        :where(figure) {
-            margin: 0 0 1em
-        }
-        html :where(.is-position-sticky) {
-            --wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height, 0px)
-        }
-        @media screen and (max-width:600px) {
-            html :where(.is-position-sticky) {
-                --wp-admin--admin-bar--position-offset: 0px
-            }
-        }
-        /*# sourceURL=wp-block-library-inline-css */
-    </style>
-    <style id="classic-theme-styles-inline-css" type="text/css">
-        /*! This file is auto-generated */
-        .wp-block-button__link {
-            color: #fff;
-            background-color: #32373c;
-            border-radius: 9999px;
-            box-shadow: none;
-            text-decoration: none;
-            padding: calc(.667em + 2px) calc(1.333em + 2px);
-            font-size: 1.125em
-        }
-        .wp-block-file__button {
-            background: #32373c;
-            color: #fff;
-            text-decoration: none
-        }
-        /*# sourceURL=/wp-includes/css/classic-themes.min.css */
-    </style>
-    <style id="global-styles-inline-css" type="text/css">
-        :root {
-            --wp--preset--aspect-ratio--square: 1;
-            --wp--preset--aspect-ratio--4-3: 4/3;
-            --wp--preset--aspect-ratio--3-4: 3/4;
-            --wp--preset--aspect-ratio--3-2: 3/2;
-            --wp--preset--aspect-ratio--2-3: 2/3;
-            --wp--preset--aspect-ratio--16-9: 16/9;
-            --wp--preset--aspect-ratio--9-16: 9/16;
-            --wp--preset--color--black: #000000;
-            --wp--preset--color--cyan-bluish-gray: #abb8c3;
-            --wp--preset--color--white: #ffffff;
-            --wp--preset--color--pale-pink: #f78da7;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--color--luminous-vivid-amber: #fcb900;
-            --wp--preset--color--light-green-cyan: #7bdcb5;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--pale-cyan-blue: #8ed1fc;
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgb(6, 147, 227) 0%, rgb(155, 81, 224) 100%);
-            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgb(252, 185, 0) 0%, rgb(255, 105, 0) 100%);
-            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgb(255, 105, 0) 0%, rgb(207, 46, 46) 100%);
-            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
-            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
-            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-            --wp--preset--font-size--small: 13px;
-            --wp--preset--font-size--medium: 20px;
-            --wp--preset--font-size--large: 36px;
-            --wp--preset--font-size--x-large: 42px;
-            --wp--preset--spacing--20: 0.44rem;
-            --wp--preset--spacing--30: 0.67rem;
-            --wp--preset--spacing--40: 1rem;
-            --wp--preset--spacing--50: 1.5rem;
-            --wp--preset--spacing--60: 2.25rem;
-            --wp--preset--spacing--70: 3.38rem;
-            --wp--preset--spacing--80: 5.06rem;
-            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);
-            --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);
-        }
-        :where(.is-layout-flex) {
-            gap: 0.5em;
-        }
-        :where(.is-layout-grid) {
-            gap: 0.5em;
-        }
-        body .is-layout-flex {
-            display: flex;
-        }
-        .is-layout-flex {
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .is-layout-flex> :is(*, div) {
-            margin: 0;
-        }
-        body .is-layout-grid {
-            display: grid;
-        }
-        .is-layout-grid> :is(*, div) {
-            margin: 0;
-        }
-        :where(.wp-block-columns.is-layout-flex) {
-            gap: 2em;
-        }
-        :where(.wp-block-columns.is-layout-grid) {
-            gap: 2em;
-        }
-        :where(.wp-block-post-template.is-layout-flex) {
-            gap: 1.25em;
-        }
-        :where(.wp-block-post-template.is-layout-grid) {
-            gap: 1.25em;
-        }
-        .has-black-color {
-            color: var(--wp--preset--color--black) !important;
-        }
-        .has-cyan-bluish-gray-color {
-            color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-        .has-white-color {
-            color: var(--wp--preset--color--white) !important;
-        }
-        .has-pale-pink-color {
-            color: var(--wp--preset--color--pale-pink) !important;
-        }
-        .has-vivid-red-color {
-            color: var(--wp--preset--color--vivid-red) !important;
-        }
-        .has-luminous-vivid-orange-color {
-            color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-        .has-luminous-vivid-amber-color {
-            color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-        .has-light-green-cyan-color {
-            color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-        .has-vivid-green-cyan-color {
-            color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-        .has-pale-cyan-blue-color {
-            color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-        .has-vivid-cyan-blue-color {
-            color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-        .has-vivid-purple-color {
-            color: var(--wp--preset--color--vivid-purple) !important;
-        }
-        .has-black-background-color {
-            background-color: var(--wp--preset--color--black) !important;
-        }
-        .has-cyan-bluish-gray-background-color {
-            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-        .has-white-background-color {
-            background-color: var(--wp--preset--color--white) !important;
-        }
-        .has-pale-pink-background-color {
-            background-color: var(--wp--preset--color--pale-pink) !important;
-        }
-        .has-vivid-red-background-color {
-            background-color: var(--wp--preset--color--vivid-red) !important;
-        }
-        .has-luminous-vivid-orange-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-        .has-luminous-vivid-amber-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-        .has-light-green-cyan-background-color {
-            background-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-        .has-vivid-green-cyan-background-color {
-            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-        .has-pale-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-        .has-vivid-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-        .has-vivid-purple-background-color {
-            background-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-        .has-black-border-color {
-            border-color: var(--wp--preset--color--black) !important;
-        }
-        .has-cyan-bluish-gray-border-color {
-            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-        .has-white-border-color {
-            border-color: var(--wp--preset--color--white) !important;
-        }
-        .has-pale-pink-border-color {
-            border-color: var(--wp--preset--color--pale-pink) !important;
-        }
-        .has-vivid-red-border-color {
-            border-color: var(--wp--preset--color--vivid-red) !important;
-        }
-        .has-luminous-vivid-orange-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-        .has-luminous-vivid-amber-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-        .has-light-green-cyan-border-color {
-            border-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-        .has-vivid-green-cyan-border-color {
-            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-        .has-pale-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-        .has-vivid-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-        .has-vivid-purple-border-color {
-            border-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-        }
-        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-        }
-        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-        }
-        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-        }
-        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-        }
-        .has-cool-to-warm-spectrum-gradient-background {
-            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-        }
-        .has-blush-light-purple-gradient-background {
-            background: var(--wp--preset--gradient--blush-light-purple) !important;
-        }
-        .has-blush-bordeaux-gradient-background {
-            background: var(--wp--preset--gradient--blush-bordeaux) !important;
-        }
-        .has-luminous-dusk-gradient-background {
-            background: var(--wp--preset--gradient--luminous-dusk) !important;
-        }
-        .has-pale-ocean-gradient-background {
-            background: var(--wp--preset--gradient--pale-ocean) !important;
-        }
-        .has-electric-grass-gradient-background {
-            background: var(--wp--preset--gradient--electric-grass) !important;
-        }
-        .has-midnight-gradient-background {
-            background: var(--wp--preset--gradient--midnight) !important;
-        }
-        .has-small-font-size {
-            font-size: var(--wp--preset--font-size--small) !important;
-        }
-        .has-medium-font-size {
-            font-size: var(--wp--preset--font-size--medium) !important;
-        }
-        .has-large-font-size {
-            font-size: var(--wp--preset--font-size--large) !important;
-        }
-        .has-x-large-font-size {
-            font-size: var(--wp--preset--font-size--x-large) !important;
-        }
-        /*# sourceURL=global-styles-inline-css */
-    </style>
-    <style type="text/css">
-        .broken_link,
-        a.broken_link {
-            text-decoration: line-through;
-        }
-    </style>
-    <style>
-        img.lazyload,
-        img.lazyloading {
-            background-color: rgba(0, 0, 0, 0);
-            opacity: 0.001;
-        }
-        img.lazyload,
-        img.lazyloaded {
-            opacity: 1;
-            -webkit-transition: opacity 300ms;
-            -moz-transition: opacity 300ms;
-            -ms-transition: opacity 300ms;
-            -o-transition: opacity 300ms;
-            transition: opacity 300ms;
-        }
-        iframe.lazyload,
-        iframe.lazyloading {
-            display: block;
-            background-color: rgba(0, 0, 0, 0);
-        }
-    </style>
-    <style type="text/css" id="wp-custom-css">
-        /* Ascunde submeniurile inițial */
-        ul.sub-menu {
-            display: none;
-        }
-        /* Afișează submeniurile pentru elementele cu clasa `.hovered` */
-        .hovered>ul.sub-menu {
-            display: block;
-        }
-        .link_text {
-            color: black;
-            text-decoration: underline dotted;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 2px;
-        }
-    </style>
-    <script type="text/javascript" src="source/jquery-3.3.1.min.js" id="jquery-js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // === 0. Разовый сброс проблемного CSS‑правила из всех таблиц стилей ===
-            Array.from(document.styleSheets).forEach(sheet => {
-                try {
-                    Array.from(sheet.cssRules || []).forEach((rule, idx) => {
-                        if (
-                            rule.selectorText === '#menu-osnovnoe-menju > li > ul > li > ul > li > ul' &&
-                            rule.style &&
-                            rule.style.display === 'block'
-                        ) {
-                            sheet.deleteRule(idx);
-                        }
-                    });
-                } catch (e) {
-                    // Игнорируем кросс-доменные ошибки доступа к CSSOM
-                }
-            });
-            // === 1. Основная функция инициализации меню ===
-            function initMenu() {
-                const isDesktop = window.innerWidth > 767;
-                // 1.1 Сброс инлайновых display и ранее навешанных слушателей
-                document
-                    .querySelectorAll('#menu-osnovnoe-menju .menu-item-has-children')
-                    .forEach(li => {
-                        // Удаляем inline‑display у всех подменю
-                        li.querySelectorAll('.sub-menu').forEach(ul => ul.style.removeProperty('display'));
-                        // Сбрасываем слушатели на <a> через клонирование
-                        const a = li.querySelector(':scope > a');
-                        if (a) a.replaceWith(a.cloneNode(true));
-                        // Сбрасываем флаг open
-                        li.classList.remove('open');
-                    });
-                if (isDesktop) {
-                    // === 2. Десктопная логика ===
-                    // Подменю открываются по CSS :hover или отдельному скрипту,
-                    // мы лишь позволяем кликать по ссылке без закрытия меню
-                    document
-                        .querySelectorAll('#menu-osnovnoe-menju .menu-item-has-children > a')
-                        .forEach(link => {
-                            link.addEventListener('click', e => {
-                                // Останавливаем все внешние обработчики, но не отменяем переход
-                                e.stopImmediatePropagation();
-                            });
-                        });
-                } else {
-                    // === 3. Мобильная логика (аккордеон) ===
-                    // 3.1 Убираем любые inline‑display, чтобы стили CSSOM больше не прятали подменю
-                    document
-                        .querySelectorAll('#menu-osnovnoe-menju .sub-menu')
-                        .forEach(ul => ul.style.removeProperty('display'));
-                    // 3.2 Навешиваем click-аккордеон на каждый пункт с детьми
-                    document
-                        .querySelectorAll('#menu-osnovnoe-menju .menu-item-has-children > a')
-                        .forEach(link => {
-                            link.addEventListener('click', e => {
-                                // Запрещаем переход и всплытие, а также любые внешние обработчики
-                                e.preventDefault();
-                                e.stopImmediatePropagation();
-                                const li = link.parentElement;
-                                const submenu = li.querySelector(':scope > .sub-menu');
-                                if (!submenu) return;
-                                // Переключаем класс и inline‑display только этого подменю
-                                const isOpen = li.classList.toggle('open');
-                                submenu.style.display = isOpen ? 'block' : 'none';
-                            });
-                        });
-                }
-            }
-            // Инициализируем при загрузке, изменении размера окна и при popstate (AJAX/History API)
-            initMenu();
-            window.addEventListener('resize', initMenu);
-            window.addEventListener('popstate', initMenu);
-        });
-    </script>
+    <link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="new-css" href="css/new.css" type="text/css" media="all">
+    <link rel="stylesheet" id="custom-style-css" href="css/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" id="slick-css" href="css/slick-slider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/modal_window.css" type="text/css" media="all">
+	<!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript" id="jquery-js"></script>
 </head>
 <body>
-    <div class="lins">
-        <div class="lin"></div>
-        <div class="lin"></div>
-        <div class="lin"></div>
-        <div class="lin"></div>
-        <div class="lin"></div>
-    </div>
     <!-- main -->
     <div class="main" id="main" style="background: url(img/bg_first.png) no-repeat top center; background-size: cover;">
+        <!-- head <?php include 'include/header.html'; ?> -->
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 function checkWidth() {
@@ -658,7 +72,7 @@
                     <div class="items-img mr edit_ico">
                         <img class="lazyloaded" src="img/zam.svg" alt="">
                     </div>
-                    <a href="#" class="fwb dark btn-zamer-js t14 ">
+                    <a href="#" class="fwb dark t14 open-modal">
                         <span class="sh">Бесплатно заказать <br>выезд замерщика</span>
                     </a>
                 </div>
@@ -687,19 +101,19 @@
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.916667;">+</small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.833333;">7</small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">9</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">5</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">8</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">3</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">4</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">3</small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.5;">5</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">7</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">8</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">5</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">5</small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">6</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">5</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">1</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">1</small>
                                 <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">7</small>
-                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">4</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">0</small>
+                                <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">0</small>
                             </small>
                         </a>
                     </div>
@@ -730,7 +144,7 @@
                 });
             </script>
         </header>
-        <!--оверлей меню (мобильный)-->
+        <!-- меню -->
         <div class="nav__wrap header__menu-mobile desktop active">
             <div class="close close-nav"></div>
             <div class="container-big sblock nav-wr ">
@@ -754,18 +168,6 @@
                             <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
                             <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">0</small>
                             <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">0</small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
-                            <small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small>
                         </small>
                     </a>
                 </div>
@@ -822,7 +224,8 @@
                     <div class="form-small main__form">
                         <div class="t24 fw3 tac mb2">В 1 клик <span class="fwb">оценим стоимость демонтажных работ</span> в течение 10 мин </div>
                         <div class="little_description_form"></div>
-                        <form action="#" class="mbm">
+
+                        <form action="#" class="mbm" id="mainForm">
                             <input type="hidden" name="title" value="Форма с главного экрана">
                             <input type="hidden" name="formname" value="main">
                             <div class="input-wr mbm faet-custom-select">
@@ -845,24 +248,14 @@
                             </div>
                             <div class="input-wr">
                                 <div class="t14 gray tac mbm2">Ваш телефон</div>
-                                <input type="tel" required="" name="phone" class="input t14 mbm" placeholder="Ваш телефон">
+                                <input type="tel" required name="phone" class="input t14 mbm" placeholder="+7 (___) ___-__-__">
                             </div>
-                            <button type="send" class="btn form-small__btn max mbm">
+                            <button type="submit" class="btn form-small__btn max mbm">
                                 <span class="btn-blick"></span>
-                                <span class="t16 ">Получить консультацию </span>
+                                <span class="t16">Получить консультацию</span>
                             </button>
+                            <div class="form-success" style="display:none;">Спасибо! Мы перезвоним вам в ближайшее время.</div>
                         </form>
-                        <label for="qt2" class=" check-box">
-                            <input type="checkbox" name="yes" id="qt2" class="rhide" required="" checked="">
-                            <span class="check-line v2">
-                                <span class="check-label">
-                                    <span class="check-label-act"><img src="img/ok_icon.svg" alt="" class=" ls-is-cached lazyloaded"></span>
-                                </span>
-                                <span class="t14 fw4 tal">
-                                    Вы соглашаетесь с <a href="https://demontazh-servis.ru/#" target="_blank" class="green tdu fw4 polit-js"> условиями <br>обработки персональных данных</a>
-                                </span>
-                            </span>
-                        </label>
                     </div>
                     <!-- три блока преимущества -->
                     <div class="main-advas serv1">
@@ -908,12 +301,10 @@
         </div>
     </div>
     <!--калькулятор-->
-    <div class="section test" style="background: url(img/calc/bg_calc.png) no-repeat top center; background-size: cover;" id="test">
+    <div class="section test" style="background: url(img/calc/bg_calc.png) no-repeat top center; background-size: cover;">
         <div class="container">
             <h2 class="title fw3 tac mb fade_in">Рассчитайте <span class="fwb"> стоимость демонтажных работ </span> <br>в нашем онлайн калькуляторе </h2>
-            <form action="#" class="test-form">
-                <input type="hidden" name="title" value="Тест">
-                <input type="hidden" name="formname" value="test">
+            <form class="test-form" id="quizForm">
                 <div class="test-scroll-js"></div>
                 <div class="test-left">
                     <div class="test__quests-pr tac mbm">
@@ -1036,7 +427,7 @@
                             <div class="test-item-scroll mb">
                                 <!-- 1 -->
                                 <label for="q1w2-1" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-1" value="Демонтаж пола">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-1" value="Демонтаж пола">
                                     <span class="tiem-img mbm" style="background: url(img/calc/floor.png) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1051,7 +442,7 @@
                                 </label>
                                 <!-- 1 -->
                                 <label for="q1w2-2" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-2" value="Демонтаж перегородок">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-2" value="Демонтаж перегородок">
                                     <span class="tiem-img mbm" style="background: url(img/calc/wall.png) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1066,7 +457,7 @@
                                 </label>
                                 <!-- 1 -->
                                 <label for="q1w2-3" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-3" value="Демонтаж настенных покрытий">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-3" value="Демонтаж настенных покрытий">
                                     <span class="tiem-img mbm" style="background: url(img/calc/wall_cover.png) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1081,7 +472,7 @@
                                 </label>
                                 <!-- 1 -->
                                 <label for="q1w2-4" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-4" value="Демонтаж потолка">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-4" value="Демонтаж потолка">
                                     <span class="tiem-img mbm" style="background: url(img/calc/ceiling.png) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1096,7 +487,7 @@
                                 </label>
                                 <!-- 1 -->
                                 <label for="q1w2-5" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-5" value="Другое">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-5" value="Другое">
                                     <span class="tiem-img mbm" style="background: url(img/calc/complex.png) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1111,7 +502,7 @@
                                 </label>
                                 <!-- 1 -->
                                 <label for="q1w2-6" class="tiem">
-                                    <input type="checkbox" class="checkbox-inp" name="qw2[]" id="q1w2-6" value="Другое">
+                                    <input type="checkbox" class="checkbox-inp" name="qw2" id="q1w2-6" value="Другое">
                                     <span class="tiem-img mbm" style="background: url(img/calc/other.jpg) no-repeat center; background-size: cover;">
                                         <span class="tiem-before"></span>
                                     </span>
@@ -1292,11 +683,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- contact type 5 -->
                         <div class="test-item t-end" style="display: none;">
                             <h2 class="ttn fw3 t30 mb "><span class="fwb">Для получения расчета укажите телефон,</span> <br>на который хотите получить информацию <br>о стоимости Вашего демонтажа</h2>
-                            <div class="t20 fw5 mb2">
-                                Куда вам удобнее получить смету?
-                            </div>
+                            <div class="t20 fw5 mb2">Куда вам удобнее получить смету?</div>
                             <div class="t-end-block">
                                 <div class="case-check mbm">
                                     <label for="case1" class="case-check__item">
@@ -1307,9 +697,7 @@
                                                     <title>Векторный смарт-объект</title>
                                                     <path d="M27,13.1A13.28,13.28,0,0,1,7.34,24.62L0,27l2.39-7.06A13.08,13.08,0,0,1,.49,13.1,13.26,13.26,0,0,1,27,13.1Zm-13.25-11A11.11,11.11,0,0,0,2.6,13.1a11,11,0,0,0,2.12,6.49l-1.39,4.1,4.28-1.36A11.08,11.08,0,1,0,13.75,2.05Zm6.69,14.08a2.07,2.07,0,0,0-.62-.38c-.33-.15-1.93-.94-2.22-1a.51.51,0,0,0-.7.11l0,0c-.21.32-.83,1.05-1,1.26a.5.5,0,0,1-.7.08,8.71,8.71,0,0,1-2.62-1.6,9.43,9.43,0,0,1-1.8-2.23.46.46,0,0,1,.13-.65h0c.14-.14.32-.37.49-.56a2.08,2.08,0,0,0,.32-.54.56.56,0,0,0,0-.56c-.08-.17-.73-1.75-1-2.4s-.54-.53-.73-.53-.4,0-.62,0a1.25,1.25,0,0,0-.87.4,3.61,3.61,0,0,0-1.13,2.69,6.13,6.13,0,0,0,1.32,3.33c.17.22,2.25,3.58,5.55,4.87s3.3.86,3.9.81a3.3,3.3,0,0,0,2.2-1.54,2.67,2.67,0,0,0,.18-1.53Z" transform="translate(0 -0.05)" style="fill:#2cab1c;fill-rule:evenodd"></path>
                                                 </svg> </div>
-                                            <div class="case-check__text t13">
-                                                WhatsApp
-                                            </div>
+                                            <div class="case-check__text t13">WhatsApp</div>
                                         </div>
                                     </label>
                                     <label for="case2" class="case-check__item">
@@ -1320,9 +708,7 @@
                                                     <title>Векторный смарт-объект1</title>
                                                     <path d="M22.46,2.92C20.39.9,17-.07,12.48,0S4.82.9,2.82,2.53,0,6.39,0,9.75v3.43c0,4,2.15,8.33,6.25,9a.86.86,0,0,0,.28-1.7h0c-3.11-.5-4.79-4.13-4.79-7.29V9.75c0-4.82,1.8-7.84,10.78-8,4.07-.09,7,.73,8.74,2.41a7.4,7.4,0,0,1,2,5.6v3.43c0,5.2-2.35,7.49-8.39,8.16H10.58a.86.86,0,0,0-.61.25l-3,3a.88.88,0,0,0,0,1.23.86.86,0,0,0,1.21,0l2.76-2.74H15c3.45-.38,5.82-1.27,7.44-2.81S25,16.33,25,13.18V9.75A9.11,9.11,0,0,0,22.46,2.92ZM13,5.63h0a5.24,5.24,0,0,1,3.71,1.52,5.17,5.17,0,0,1,1.54,3.67.85.85,0,0,0,.86.86h0a.85.85,0,0,0,.87-.85h0a6.81,6.81,0,0,0-2-4.89,7,7,0,0,0-4.94-2h0a.86.86,0,1,0,0,1.72Zm0,3a2.18,2.18,0,0,1,2.19,2.16.87.87,0,1,0,1.74,0A3.91,3.91,0,0,0,13,6.94h0a.86.86,0,0,0,0,1.72Zm-3.9,1.47a.86.86,0,0,0-.23,1.19h0a.88.88,0,0,0,1.21.22,1.88,1.88,0,0,0,1-1.69,4.8,4.8,0,0,0-1-2A4.45,4.45,0,0,0,8.42,6.24a1.9,1.9,0,0,0-1.31,0,3.13,3.13,0,0,0-2,1.63,3,3,0,0,0,0,2.43,16,16,0,0,0,3.48,5.29A16.38,16.38,0,0,0,14,19a3.43,3.43,0,0,0,1.3.26A2.9,2.9,0,0,0,16.44,19a3.17,3.17,0,0,0,1.64-1.94,1.88,1.88,0,0,0,0-1.3,4.44,4.44,0,0,0-1.6-1.65,4.8,4.8,0,0,0-2.06-1,1.94,1.94,0,0,0-1.71,1,.85.85,0,0,0,.22,1.18h0a.88.88,0,0,0,1.21-.22,1.3,1.3,0,0,1,.18-.23,7.46,7.46,0,0,1,2.13,1.56.27.27,0,0,1,0,.13,1.54,1.54,0,0,1-.72.92,1.35,1.35,0,0,1-1.08,0,14.24,14.24,0,0,1-4.75-3.06,14.18,14.18,0,0,1-3.1-4.72,1.33,1.33,0,0,1,0-1.07,1.52,1.52,0,0,1,.93-.71.29.29,0,0,1,.13,0A7.18,7.18,0,0,1,9.36,10a1.24,1.24,0,0,1-.22.18Z" transform="translate(0.01 -0.01)" style="fill:#675dac;fill-rule:evenodd"></path>
                                                 </svg> </div>
-                                            <div class="case-check__text t13">
-                                                Viber
-                                            </div>
+                                            <div class="case-check__text t13">Viber</div>
                                         </div>
                                     </label>
                                     <label for="case3" class="case-check__item">
@@ -1336,22 +722,20 @@
                                                         </clippath>
                                                     </defs>
                                                     <title>Векторный смарт-объект2</title>
-                                                    <g style="clip-path:url(https://demontazh-servis.ru/wp-content/themes/site/#a)">
+                                                    <g style="">
                                                         <path d="M268,61.09h1A181.56,181.56,0,0,1,450.91,243.9a20,20,0,0,0,19.9,20.1h.1a20,20,0,0,0,20-19.91A221.54,221.54,0,0,0,269,21.09h-1.1a20,20,0,0,0,.1,40" transform="translate(0 0)" style="fill:#ff7b00"></path>
                                                         <path d="M512,412.55a75.78,75.78,0,0,0-23.23-52c-27.93-26.93-51.33-42.48-73.65-48.93-30.75-8.89-59.22-.8-84.64,24a1.14,1.14,0,0,0-.11.11l-27.07,26.86c-16.81-9.44-49.49-30.22-85.23-66L215.39,294c-35.51-35.5-56.43-68.37-65.94-85.25l26.84-27,.11-.12c24.82-25.41,32.9-53.89,24-84.64-6.45-22.31-22-45.71-48.93-73.64A76.11,76.11,0,0,0,45.86,19.47l-.57.52c-.27.24-.53.48-.78.74C15.15,50.08-.24,91.19,0,139.59c.41,82.22,45.6,176.25,120.88,251.52l.19.19a488.19,488.19,0,0,0,47.76,41.57,20,20,0,0,0,24.34-31.75,445.66,445.66,0,0,1-44-38.29l-.19-.19c-67.88-68-108.62-151.4-109-223.25-.18-37.28,11-68.39,32.43-90l.16-.14A36,36,0,0,1,122.69,51c51.79,53.7,48,79.05,25.16,102.51l-37.08,37.36a20,20,0,0,0-4.07,22.22c.94,2.12,23.7,52.43,80.41,109.13l2.63,2.63c56.7,56.7,107,79.47,109.13,80.41a20,20,0,0,0,22.22-4.07l37.35-37.07C381.9,341.28,407.26,337.52,461,389.3a36,36,0,0,1,1.81,50.11l-.14.16C441.18,460.79,410.39,472,373.52,472h-.91c-29.47-.15-63.6-8.23-98.69-23.37a20,20,0,0,0-15.84,36.73c40.56,17.5,79,26.46,114.33,26.64h1.12c47.92,0,88.61-15.38,117.74-44.51.26-.26.5-.52.74-.78l.52-.58A75.79,75.79,0,0,0,512,412.55" transform="translate(0 0)" style="fill:#ff7b00"></path>
                                                         <path d="M369.46,142.55c-21.46-21.46-42-27.15-51.94-29.89a20,20,0,0,0-10.66,38.56c8.09,2.23,20.32,5.62,34.31,19.61,13.48,13.47,17.05,25.64,19.42,33.69l.29,1a20,20,0,0,0,19.17,14.32,19.73,19.73,0,0,0,5.69-.82,20,20,0,0,0,13.5-24.86l-.27-.92c-3.09-10.48-8.83-30-29.51-50.67" transform="translate(0 0)" style="fill:#ff7b00"></path>
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <div class="case-check__text t13">
-                                                Позвоните мне
-                                            </div>
+                                            <div class="case-check__text t13">Позвоните мне</div>
                                         </div>
                                     </label>
                                 </div>
-                                <img data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/test/hand.png" alt="" class="hand lazyload">
+                                <img src="img/hand.png" alt="" class="hand lazyload">
                                 <input type="tel" class="input t15 inp-enp-ph ttn mbm t-inp-mod" name="phone" placeholder="Ваш телефон в WhatsApp" required="">
-                                <button class="btn min max t-end-btn mb">
+                                <button class="btn min max t-end-btn mb" type="submit">
                                     <span class="btn-blick"></span>
                                     <span class="t22 ttn fw5">Получить расчёт</span>
                                 </button>
@@ -1360,13 +744,8 @@
                         </div>
                         <div class="test-item t-thank tac" style="display: none;">
                             <img data-src="" alt="" class="tt-ok msm lazyload">
-                            <h4 class="fw9 tac mb t36 ttn">
-                                Спасибо!
-                            </h4>
-                            <p class="t24 ttn">
-                                Мы свяжемся в Вами в ближайшее время <br>
-                                и вышлем всю необходимую информацию
-                            </p>
+                            <h4 class="fw9 tac mb t36 ttn">Спасибо!</h4>
+                            <p class="t24 ttn">Мы свяжемся в Вами в ближайшее время <br>и вышлем всю необходимую информацию</p>
                         </div>
                     </div>
                 </div>
@@ -1417,7 +796,7 @@
                             <a href="/" class="t16 dark"> - Офиса</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1444,7 +823,7 @@
                             <a href="/" class="t16 dark"> - стен из газобетона</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1474,7 +853,7 @@
                             <a href="/" class="t16 dark"> - цементной стяжки</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1501,7 +880,7 @@
                             <a href="/" class="t16 dark"> - зачистка краски и шпатлевки</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1514,7 +893,7 @@
                         <img src="img/services/walls_exits.jpg" alt="" class="lazyloaded">
                     </div>
                     <div class="services-list__con">
-                        <a href="https://demontazh-servis.ru/nashi-uslugi/almaznaja-rezka/" class="dark db t30 fwb mb2">Алмазная резка стен и проемов</a>
+                        <a href="#" class="dark db t30 fwb mb2">Алмазная резка стен и проемов</a>
                         <div class="services-list__pr mb2">
                             <div class="t16 pr-line">
                                 от <span class="t24 fwb ">450 руб/м.п</span>
@@ -1528,7 +907,7 @@
                             <a href="/" class="t16 dark"> - дверных блоков</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1557,7 +936,7 @@
                             <a href="/" class="t16 dark"> - расчистка участка</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1583,7 +962,7 @@
                             <a href="/" class="t16 dark"> - контейнер 27м3</a>
                         </div>
                         <div class="services-list__bot">
-                            <a href="#" type="send" class="btn services__btn mbm mr btn-js-dcript">
+                            <a href="#" type="send" class="btn services__btn mbm mr open-modal">
                                 <span class="btn-blick"></span>
                                 <span class="t16 ">Заказать демонтаж</span>
                             </a>
@@ -1724,9 +1103,9 @@
                 </div>
                 <div class="services-form__cont">
                     <div class="t36 fwb white">Получите расчеты на WhatsApp в 1 клик </div>
-                    <a href="#" type="send" class="btn services-form__btn mbm btn-price-js">
+                    <a href="#" type="send" class="btn services-form__btn mbm open-modal">
                         <span class="btn-blick"></span>
-                        <span class="t16 ">Получить прайс на WhatsApp в 1 клик</span>
+                        <span class="t16">Получить прайс на WhatsApp в 1 клик</span>
                     </a>
                 </div>
                 <div class="services-form__im">
@@ -1738,14 +1117,14 @@
             </div>
         </div>
     </div>
-    <!-- portfolio -->
+    <!-- портфолио -->
     <div class="section portfolio">
         <div class="container">
             <h2 class="title fw3 tac mlg fade_in"><span class="fwb">Наши работы</span> (портфолио)</h2>
-            <div class="portfolio-slider slick-initialized slick-slider slick-dotted">
+            <div class="slick-initialized slick-slider slick-dotted">
                 <div class="prev slick-arrow" style=""></div>
                 <div class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 15678px; transform: translate3d(-1206px, 0px, 0px);">
+                    <div class="slick-track portfolio-track" style="opacity: 1; width: 15678px; transform: translate3d(-1206px, 0px, 0px);">
                         <!--один-->
                         <div class="portfolio-slider__item vdbl rel slick-slide slick-cloned" style="width: 1206px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control05" data-slick-index="-1" aria-hidden="true">
                             <div class="portfolio__t2">
@@ -1805,7 +1184,7 @@
                                         <span class="t30 gray fwb">04</span> Погрузка и вывоз мусора </div>
                                 </div>
                                 <div class="portfolio__bot">
-                                    <a href="https://demontazh-servis.ru/" type="send" class="btn portfolio__btn mbm mr btn-call-js" tabindex="-1">
+                                    <a href="#" type="send" class="btn portfolio__btn mbm mr open-modal" tabindex="-1">
                                         <span class="btn-blick"></span>
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
@@ -1871,7 +1250,7 @@
                                         <span class="t30 gray fwb">04</span> Погрузка и вывоз мусора</div>
                                 </div>
                                 <div class="portfolio__bot">
-                                    <a href="#" type="send" class="btn portfolio__btn mbm mr btn-call-js" tabindex="0">
+                                    <a href="#" type="send" class="btn portfolio__btn mbm mr open-modal" tabindex="0">
                                         <span class="btn-blick"></span>
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
@@ -1886,25 +1265,25 @@
                             </div>
                             <div class="portfolio-gal">
                                 <a href="img/portfolio/beton1.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton7.jpg" alt="" class=" lazyloaded">
+                                    <img src="img/portfolio/beton1.jpg" alt="" class=" lazyloaded">
                                 </a>
                                 <a href="img/portfolio/beton2.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton.jpg" alt="" class=" ls-is-cached lazyloaded">
+                                    <img src="img/portfolio/beton2.jpg" alt="" class=" ls-is-cached lazyloaded">
                                 </a>
                                 <a href="img/portfolio/beton3.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton1.jpg"  alt="" class=" lazyloaded">
+                                    <img src="img/portfolio/beton3.jpg"  alt="" class=" lazyloaded">
                                 </a>
                                 <a href="img/portfolio/beton4.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton2.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton5.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
                                     <img src="img/portfolio/beton4.jpg" alt="" class=" lazyloaded">
                                 </a>
-                                <a href="img/portfolio/beton6.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
+                                <a href="img/portfolio/beton5.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
                                     <img src="img/portfolio/beton5.jpg" alt="" class=" lazyloaded">
                                 </a>
-                                <a href="img/portfolio/beton7.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
+                                <a href="img/portfolio/beton6.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
                                     <img src="img/portfolio/beton6.jpg" alt="" class=" lazyloaded">
+                                </a>
+                                <a href="img/portfolio/beton.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
+                                    <img src="img/portfolio/beton.jpg" alt="" class=" lazyloaded">
                                 </a>
                             </div>
                             <div class="portfolio-desc">
@@ -1943,7 +1322,7 @@
                                         <span class="t30 gray fwb">04</span> Погрузка и вывоз самосвалами</div>
                                 </div>
                                 <div class="portfolio__bot">
-                                    <a href="#" type="send" class="btn portfolio__btn mbm mr btn-call-js" tabindex="-1">
+                                    <a href="#" type="send" class="btn portfolio__btn mbm mr open-modal" tabindex="-1">
                                         <span class="btn-blick"></span>
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
@@ -2013,13 +1392,13 @@
                                         <span class="t30 gray fwb">04</span> Погрузка и вывоз контейнером 8 кубов</div>
                                 </div>
                                 <div class="portfolio__bot">
-                                    <a href="#" type="send" class="btn portfolio__btn mbm mr btn-call-js" tabindex="-1">
+                                    <a href="#" type="send" class="btn portfolio__btn mbm mr open-modal" tabindex="-1">
                                         <span class="btn-blick"></span>
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
                                     <div class="items mrs">
                                         <div class="items-img mr edit_ico">
-                                            <img class="lazyload" data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/icons/calc.svg" alt="">
+                                            <img class="lazyload" src="img/icons/calc.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -2033,8 +1412,6 @@
                     <li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 6" tabindex="-1">2</button></li>
                     <li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 6" tabindex="-1">3</button></li>
                     <li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 6" tabindex="-1">4</button></li>
-                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 6" tabindex="-1">5</button></li>
-                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 6" tabindex="-1">6</button></li>
                 </ul>
             </div>
         </div>
@@ -2479,6 +1856,8 @@
             </div>
         </div>
     </div>
+    <!-- foot <?php include 'include/footer.html'; ?> -->
+
     <!-- footer-nav -->
     <div class="footer-nav white">
         <div class="container">
@@ -2498,14 +1877,14 @@
                         </div>
                         <div class="price__text">
                             <div class="t18 fwb">Лучшая цена</div>
-                            <div class="t14">Выбор покупателей 2024 г</div>
+                            <div class="t14">Выбор покупателей 2025 г</div>
                         </div>
                     </div>
                     <div class="items">
                         <div class="items-img mr edit_ico">
                             <img class=" lazyloaded" src="img/zam.svg" alt="">
                         </div>
-                        <a href="https://demontazh-servis.ru/#" class="fwb white btn-zamer-js t14">
+                        <a href="https://demontazh-servis.ru/#" class="white t14 modal open-modal">
                             <span class="sh">Бесплатно заказать <br>выезд замерщика</span>
                         </a>
                     </div>
@@ -2638,31 +2017,11 @@
             </div>
         </div>
     </div>
-    <!-- modals -->
-    <style>
-        .overlay-models {
-            z-index: 999;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            overflow-x: hidden;
-            overflow-y: scroll;
-        }
-        .close-test {
-            right: 1.3rem;
-            top: 1.3rem;
-            width: 2.2rem;
-            height: 2.2rem;
-        }
-    </style>
-    <div class="overlay-models" style="display:none;">
-        <div class="close close-test"></div>
-        <div class="overlay-models-box"></div>
-    </div>
-    <input type="hidden" class="tesVal" value="v1">
+
+
+    <!-- прокрутка страницы вверх -->
+    <div class="to_top act"></div>
+    <!-- мобильный блок с кнопками ва/звонок -->
     <div class="header__contacts">
         <div class="header__seti">
             <a href="https://wa.me/73435551100?text=Здравствуйте!%20Интересует%20демонтаж%20в%20Екатеринбурге." target="_black" class="contact-btn" style="background-color:#30cb0d">
@@ -2673,773 +2032,52 @@
             </a>
         </div>
     </div>
-    <div class="to_top act"></div>
-    <!-- Заказать демонтаж -->
-    <div class="overlay" id="modal-call" style="display: none">
-        <div class="modal-wrap ">
-            <div class="close"></div>
-            <div class="modal modal-flex modal-min rel">
-                <div class="t30 fwb tac mb2">Заказать демонтаж</div>
-                <div class="mod-top mbm">
-                    <div class="mod-top__img">
-                        <img class="lazyload" data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/modals/im1.png" alt="">
-                    </div>
-                    <div class="mod-top__des">
-                        <div class="t24 fwb mbm2">Алексей</div>
-                        <div class="t18">
-                            Впишите ваш телефон <br>
-                            и мы немедленно <br>
-                            перезвоним вам
-                        </div>
-                    </div>
-                </div>
-                <form action="https://demontazh-servis.ru/" class="mb">
-                    <input type="hidden" name="title" value="Форма Заказать демонтаж">
-                    <input type="hidden" name="formname" value="zakaz">
-                    <input type="tel" required="" name="phone" class="input t14 mbm" placeholder="Ваш номер телефона">
-                    <button type="send" class="btn mod__btn max mbm">
-                        <span class="btn-blick"></span>
-                        <span class="t16 ">Оставить заявку</span>
-                    </button>
-                    <div class="tac mod-label">
-                        <label for="qt232" class=" check-box">
-                            <input type="checkbox" name="yes" id="qt232" class="rhide" required="" checked="">
-                            <span class="check-line v2">
-                                <span class="check-label">
-                                    <span class="check-label-act"><img data-src="img/ok_icon.svg" alt="" class=" lazyload"></span>
-                                </span>
-                                <span class="t14 fw4 tal">
-                                    Отправляя заявку, вы соглашаетесь с
-                                    <a href="https://demontazh-servis.ru/privacy-policy/" class="link" target="_blank" rel="nofollow noopener" onclick="event.stopPropagation();">
-                                        политикой обработки персональных данных
-                                    </a>
-                                </span>
-                            </span></label>
-                    </div>
-                </form>
-                <div class="t18 fwb tac mbm">
-                    Нужно срочно?
-                    Звоните:
-                </div>
-                <div class="t14 green-label tac white mbm">
-                    Звоните, мы сейчас работаем
-                </div>
-                <a href="tel:+73435551100" class="t24 fwb tac dark"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.916667;">+</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">9</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.5;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">6</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">4</small></small></a>
+    <!-- модальное окно -->
+    <div class="dm-overlay" id="dmModal">
+        <div class="dm-modal">
+            <button class="dm-close" id="dmClose">×</button>
+            <div class="dm-head">
+                <h2 class="dm-title">Бесплатно рассчитаем стоимость демонтажа</h2>
+                <p class="dm-subtitle">Оставьте телефон — специалист свяжется с вами и подробно проконсультирует</p>
+            </div>
+            <form id="dmForm" class="dm-form">
+                <input 
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="+7 (___) ___-__-__"
+                    class="dm-input"
+                    id="dmPhone"
+                >
+                <button type="submit" class="dm-btn">Получить консультацию</button>
+                <div class="dm-success" style="display:none;">Спасибо! Мы перезвоним вам в ближайшее время.</div>
+            </form>
+            <div class="dm-benefits">
+                <div class="dm-benefit">✔ Работаем по Екатеринбургу и области</div>
+                <div class="dm-benefit">✔ Без скрытых платежей</div>
+                <div class="dm-benefit">✔ Выезд возможен сегодня</div>
+            </div>
+            <div class="dm-call">
+                <div class="dm-call-text">Нужно срочно?</div>
+                <a href="tel:+73435551100" class="dm-call-btn">Позвонить сейчас</a>
             </div>
         </div>
     </div>
-    <!-- Заказать выезд замерщика -->
-    <div class="overlay" id="modal-viez" style="display: none">
-        <div class="modal-wrap ">
-            <div class="close"></div>
-            <div class="modal modal-flex modal-min rel">
-                <div class="t30 fwb tac mb2">
-                    Заказать <br>
-                    выезд замерщика
-                </div>
-                <div class="mod-top mbm">
-                    <div class="mod-top__img">
-                        <img class="lazyload" data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/modals/im2.png" alt="">
-                    </div>
-                    <div class="mod-top__des">
-                        <div class="t24 fwb mbm2">Сергей</div>
-                        <div class="t18">
-                            Впишите ваш телефон <br>
-                            и мы немедленно <br>
-                            перезвоним вам и <br>
-                            согласуем время и дату <br>
-                            приезда замерщика
-                        </div>
-                    </div>
-                </div>
-                <form action="https://demontazh-servis.ru/" class="mb">
-                    <input type="hidden" name="title" value="Форма Заказать выезд замерщика">
-                    <input type="hidden" name="formname" value="zamer">
-                    <input type="tel" required="" name="phone" class="input t14 mbm" placeholder="Ваш номер телефона">
-                    <button type="send" class="btn mod__btn max mbm">
-                        <span class="btn-blick"></span>
-                        <span class="t16 ">Перезвонить и согласовать</span>
-                    </button>
-                    <div class="tac mod-label">
-                        <label for="qt2132" class=" check-box">
-                            <input type="checkbox" name="yes" id="qt2132" class="rhide" required="" checked="">
-                            <span class="check-line v2">
-                                <span class="check-label">
-                                    <span class="check-label-act"><img data-src="img/ok_icon.svg" alt="" class=" lazyload"></span>
-                                </span>
-                                <span class="t14 fw4 tal">
-                                    Отправляя заявку, вы соглашаетесь с
-                                    <a href="https://demontazh-servis.ru/privacy-policy/" class="link" target="_blank" rel="nofollow noopener" onclick="event.stopPropagation();">
-                                        политикой обработки персональных данных
-                                    </a>
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                </form>
-                <div class="t18 fwb tac mbm">
-                    Нужно срочно?
-                    Звоните:
-                </div>
-                <div class="t14 green-label tac white mbm">
-                    Звоните, мы сейчас работаем
-                </div>
-                <a href="tel:+73435551100" class="t24 fwb tac dark"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.916667;">+</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">9</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.5;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">6</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">4</small></small></a>
-            </div>
-        </div>
-    </div>
-    <!-- Получить стоимость в WhatsApp -->
-    <div class="overlay" id="modal-price" style="display: none">
-        <div class="modal-wrap ">
-            <div class="close"></div>
-            <div class="modal modal-flex modal-min rel">
-                <div class="t30 fwb tac mb2">
-                    Получить стоимость <br>
-                    в WhatsApp
-                </div>
-                <div class="mod-top mbm">
-                    <div class="mod-top__img">
-                        <img class="lazyload" data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/modals/im3.png" alt="">
-                    </div>
-                    <div class="mod-top__des">
-                        <!-- <div class="t24 fwb mbm2">Евгений</div> -->
-                        <div class="t18">
-                            Впишите ваш телефон <br>
-                            и мы <br>
-                            вышлем Вам расчет <br>
-                            в WhatsApp
-                        </div>
-                    </div>
-                </div>
-                <form action="https://demontazh-servis.ru/" class="mb">
-                    <input type="hidden" name="title" value="Форма Получить прайс в WhatsApp ">
-                    <input type="hidden" name="formname" value="price">
-                    <input type="tel" required="" name="phone" class="input t14 mbm" placeholder="Ваш номер телефона в WhatsApp">
-                    <button type="send" class="btn mod__btn max mbm">
-                        <span class="btn-blick"></span>
-                        <span class="t16 ">Получить Расчеты</span>
-                    </button>
-                    <div class="tac mod-label">
-                        <label for="qt2132" class=" check-box">
-                            <input type="checkbox" name="yes" id="qt2132" class="rhide" required="" checked="">
-                            <span class="check-line v2">
-                                <span class="check-label">
-                                    <span class="check-label-act"><img data-src="img/ok_icon.svg" alt="" class=" lazyload"></span>
-                                </span>
-                                <span class="t14 fw4 tal">
-                                    Отправляя заявку, вы соглашаетесь с
-                                    <a href="https://demontazh-servis.ru/privacy-policy/" class="link" target="_blank" rel="nofollow noopener" onclick="event.stopPropagation();">
-                                        политикой обработки персональных данных
-                                    </a>
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                </form>
-                <div class="t18 fwb tac mbm">
-                    Нужно срочно?
-                    Звоните:
-                </div>
-                <div class="t14 green-label tac white mbm">
-                    Звоните, мы сейчас работаем
-                </div>
-                <a href="tel:+73435551100" class="t24 fwb tac dark"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.916667;">+</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">9</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.5;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">6</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">4</small></small></a>
-            </div>
-        </div>
-    </div>
-    <!-- Заказать демонтаж-->
-    <div class="overlay" id="modal-call2" style="display: none">
-        <div class="modal-wrap ">
-            <div class="close"></div>
-            <div class="modal modal-flex modal-min rel">
-                <div class="t30 fwb tac mb2 tlt_js">Заказать демонтаж</div>
-                <div class="mod-top mbm">
-                    <div class="mod-top__img">
-                        <img class="lazyload" data-src="https://demontazh-servis.ru/wp-content/themes/site/assets/img/modals/im1.png" alt="">
-                    </div>
-                    <div class="mod-top__des">
-                        <div class="t24 fwb mbm2">Сергей</div>
-                        <div class="t18">
-                            Впишите ваш телефон <br>
-                            и мы немедленно <br>
-                            перезвоним вам
-                        </div>
-                    </div>
-                </div>
-                <form action="https://demontazh-servis.ru/" class="mb">
-                    <input type="hidden" name="title" class="tl-val-js" value="Форма Заказать демонтаж">
-                    <input type="hidden" name="formname">
-                    <input type="tel" required="" name="phone" class="input t14 mbm" placeholder="Ваш номер телефона">
-                    <button type="send" class="btn mod__btn max mbm">
-                        <span class="btn-blick"></span>
-                        <span class="t16 ">Оставить заявку</span>
-                    </button>
-                    <div class="tac mod-label">
-                        <label for="qt232" class=" check-box">
-                            <input type="checkbox" name="yes" id="qt232" class="rhide" required="" checked="">
-                            <span class="check-line v2">
-                                <span class="check-label">
-                                    <span class="check-label-act"><img data-src="img/ok_icon.svg" alt="" class=" lazyload"></span>
-                                </span>
-                                <span class="t14 fw4 tal">
-                                    Отправляя заявку, вы соглашаетесь с
-                                    <a href="https://demontazh-servis.ru/privacy-policy/" class="link" target="_blank" rel="nofollow noopener" onclick="event.stopPropagation();">
-                                        политикой обработки персональных данных
-                                    </a>
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                </form>
-                <div class="t18 fwb tac mbm">
-                    Нужно срочно?
-                    Звоните:
-                </div>
-                <div class="t14 green-label tac white mbm">
-                    Звоните, мы сейчас работаем
-                </div>
-                <a href="tel:+73435551100" class="t24 fwb tac dark"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.916667;">+</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.75;">9</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.666667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.583333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.5;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.416667;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.333333;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.25;">6</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.166667;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0833333;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">4</small></small></a>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" class="thank-url" value="https://demontazh-servis.ru/stranica-blagodarnosti/">
-    <input type="hidden" id="dir-site-start" value="https://demontazh-servis.ru//">
-    <input type="hidden" id="dir-site" value="https://demontazh-servis.ru/wp-content/themes/site/">
-    <input type="hidden" class="ajax-url" value="https://demontazh-servis.ru/wp-admin/admin-ajax.php?action=formModal">
-    <input type="hidden" class="ajax-modal" value="https://demontazh-servis.ru/wp-admin/admin-ajax.php?action=testModal">
-    <script type="speculationrules">
-        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/site/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-    <script type="text/javascript" id="rocket-browser-checker-js-after">
-        /* <![CDATA[ */
-        "use strict";
-        var _createClass = function() {
-            function defineProperties(target, props) {
-                for (var i = 0; i < props.length; i++) {
-                    var descriptor = props[i];
-                    descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor)
-                }
-            }
-            return function(Constructor, protoProps, staticProps) {
-                return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor
-            }
-        }();
-        function _classCallCheck(instance, Constructor) {
-            if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function")
-        }
-        var RocketBrowserCompatibilityChecker = function() {
-            function RocketBrowserCompatibilityChecker(options) {
-                _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options
-            }
-            return _createClass(RocketBrowserCompatibilityChecker, [{
-                key: "_checkPassiveOption",
-                value: function(self) {
-                    try {
-                        var options = {
-                            get passive() {
-                                return !(self.passiveSupported = !0)
-                            }
-                        };
-                        window.addEventListener("test", null, options), window.removeEventListener("test", null, options)
-                    } catch (err) {
-                        self.passiveSupported = !1
-                    }
-                }
-            }, {
-                key: "initRequestIdleCallback",
-                value: function() {
-                    !1 in window && (window.requestIdleCallback = function(cb) {
-                        var start = Date.now();
-                        return setTimeout(function() {
-                            cb({
-                                didTimeout: !1,
-                                timeRemaining: function() {
-                                    return Math.max(0, 50 - (Date.now() - start))
-                                }
-                            })
-                        }, 1)
-                    }), !1 in window && (window.cancelIdleCallback = function(id) {
-                        return clearTimeout(id)
-                    })
-                }
-            }, {
-                key: "isDataSaverModeOn",
-                value: function() {
-                    return "connection" in navigator && !0 === navigator.connection.saveData
-                }
-            }, {
-                key: "supportsLinkPrefetch",
-                value: function() {
-                    var elem = document.createElement("link");
-                    return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype
-                }
-            }, {
-                key: "isSlowConnection",
-                value: function() {
-                    return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType)
-                }
-            }]), RocketBrowserCompatibilityChecker
-        }();
-        //# sourceURL=rocket-browser-checker-js-after
-        /* ]]> */
-    </script>
-    <script type="text/javascript" id="rocket-preload-links-js-extra">
-        /* <![CDATA[ */
-        var RocketPreloadLinksConfig = {
-            "excludeUris": "/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/",
-            "usesTrailingSlash": "1",
-            "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php",
-            "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm",
-            "siteUrl": "https://demontazh-servis.ru",
-            "onHoverDelay": "100",
-            "rateThrottle": "3"
-        };
-        //# sourceURL=rocket-preload-links-js-extra
-        /* ]]> */
-    </script>
-    <script type="text/javascript" id="rocket-preload-links-js-after">
-        /* <![CDATA[ */
-        (function() {
-            "use strict";
-            var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
-                    return typeof e
-                } : function(e) {
-                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-                },
-                e = function() {
-                    function i(e, t) {
-                        for (var n = 0; n < t.length; n++) {
-                            var i = t[n];
-                            i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
-                        }
-                    }
-                    return function(e, t, n) {
-                        return t && i(e.prototype, t), n && i(e, n), e
-                    }
-                }();
-            function i(e, t) {
-                if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-            }
-            var t = function() {
-                function n(e, t) {
-                    i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0
-                }
-                return e(n, [{
-                    key: "init",
-                    value: function() {
-                        !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = {
-                            excludeUris: RegExp(this.config.excludeUris, "i"),
-                            images: RegExp(".(" + this.config.imageExt + ")$", "i"),
-                            fileExt: RegExp(".(" + this.config.fileExt + ")$", "i")
-                        }, this._initListeners(this))
-                    }
-                }, {
-                    key: "_initListeners",
-                    value: function(e) {
-                        -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions)
-                    }
-                }, {
-                    key: "listener",
-                    value: function(e) {
-                        var t = e.target.closest("a"),
-                            n = this._prepareUrl(t);
-                        if (null !== n) switch (e.type) {
-                            case "mousedown":
-                            case "touchstart":
-                                this._addPrefetchLink(n);
-                                break;
-                            case "mouseover":
-                                this._earlyPrefetch(t, n, "mouseout")
-                        }
-                    }
-                }, {
-                    key: "_earlyPrefetch",
-                    value: function(t, e, n) {
-                        var i = this,
-                            r = setTimeout(function() {
-                                if (r = null, 0 === i.numOnHover) setTimeout(function() {
-                                    return i.numOnHover = 0
-                                }, 1e3);
-                                else if (i.numOnHover > i.config.rateThrottle) return;
-                                i.numOnHover++, i._addPrefetchLink(e)
-                            }, this.config.onHoverDelay);
-                        t.addEventListener(n, function e() {
-                            t.removeEventListener(n, e, {
-                                passive: !0
-                            }), null !== r && (clearTimeout(r), r = null)
-                        }, {
-                            passive: !0
-                        })
-                    }
-                }, {
-                    key: "_addPrefetchLink",
-                    value: function(i) {
-                        return this.prefetched.add(i.href), new Promise(function(e, t) {
-                            var n = document.createElement("link");
-                            n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n)
-                        }).catch(function() {})
-                    }
-                }, {
-                    key: "_prepareUrl",
-                    value: function(e) {
-                        if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null;
-                        var t = e.href.substring(0, this.config.siteUrl.length),
-                            n = this._getPathname(e.href, t),
-                            i = {
-                                original: e.href,
-                                protocol: e.protocol,
-                                origin: t,
-                                pathname: n,
-                                href: t + n
-                            };
-                        return this._isLinkOk(i) ? i : null
-                    }
-                }, {
-                    key: "_getPathname",
-                    value: function(e, t) {
-                        var n = t ? e.substring(this.config.siteUrl.length) : e;
-                        return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n
-                    }
-                }, {
-                    key: "_shouldAddTrailingSlash",
-                    value: function(e) {
-                        return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e)
-                    }
-                }, {
-                    key: "_isLinkOk",
-                    value: function(e) {
-                        return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href))
-                    }
-                }], [{
-                    key: "run",
-                    value: function() {
-                        "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({
-                            capture: !0,
-                            passive: !0
-                        }), RocketPreloadLinksConfig).init()
-                    }
-                }]), n
-            }();
-            t.run();
-        }());
-        //# sourceURL=rocket-preload-links-js-after
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="source/slick.min.js" id="slick-js"></script>
-    <script type="text/javascript" src="source/jquery.fancybox.min.js" id="fancybox-js"></script>
-    <script type="text/javascript" src="source/fancySelect.js" id="fancySelect-js"></script>
-    <script type="text/javascript" src="source/jquery.maskedinput.js" id="maskedinput-js"></script>
-    <script type="text/javascript" src="source/stepper.min.js" id="stepper-js"></script>
-    <script type="text/javascript" src="source/script(1).js" id="scripts-js"></script>
-    <script type="text/javascript" src="source/test.js" id="test-js"></script>
-    <script type="text/javascript" id="" charset="">
-        (function(c, a, d, b) {
-            function k(l) {
-                var f = a.getElementsByTagName("script")[0],
-                    e = a.createElement("script"),
-                    g = function() {
-                        f.parentNode.insertBefore(e, f)
-                    },
-                    h = "";
-                e.async = !0;
-                a.location.search && a.location.search.indexOf("?gudok_check\x3d") === 0 && (h += a.location.search.replace("?", "\x26"));
-                e.src = "//mod.gudok.tel/script.js?sid\x3d" + l + h;
-                c.opera == "[object Opera]" ? a.addEventListener("DOMContentLoaded", g, !1) : g()
-            }
-            c.GudokData = d;
-            typeof b !== "object" && (b = [b]);
-            c[d] = {};
-            c[d].projects = b;
-            k(b.join(","))
-        })(window, document, "gd",
-            "cxi5tdptzr");
-    </script>
-    <script type="text/javascript" src="source/modal-open.js" id="modal-script-js"></script>
-    <script type="text/javascript" id="lazysizes-js-before">
-        /* <![CDATA[ */
-        window.lazySizesConfig = window.lazySizesConfig || {};
-        //# sourceURL=lazysizes-js-before
-        /* ]]> */
-    </script>
-    <script type="text/javascript" async="async" src="source/lazysizes.min.js" id="lazysizes-js"></script>
-    <script>
-        $(".btn-nav-calc").on("click", function(e) {
-            e.preventDefault();
-            var msg = `modal=true&variant=${$(".tesVal").val()}`;
-            var action = $(".ajax-modal").val();
-            $(".overlay-models-box").html();
-            $("html").addClass("stop");
-            $(".overlay-models").fadeIn();
-            $.ajax({
-                type: "GET",
-                url: action,
-                data: msg,
-                success: function(data) {
-                    //       $(".overlay-models-box").html();
-                    $(".overlay-models-box").html(data);
-                    //       $("html").addClass("stop");
-                    //       $(".overlay-models").fadeIn();
-                    testActive();
-                    // тут добавляем скрипты если нужны после добаления новых элементов - типо ajax для новых форм или фансибокс
-                },
-            });
-        });
-        $(".close-test").on("click", function(e) {
-            $(".overlay-models").fadeOut();
-            $(".overlay-models-box").html();
-        });
-        if ($(window).width() > 991) {
-            var offsetTop = $(".nav__wrap").offset().top;
-            var thisTitle = $(".nav__wrap");
-            $(window).scroll(function(event) {
-                if ($(window).scrollTop() > offsetTop) {
-                    if (!$(".nav__wrap").hasClass('active')) {
-                        thisTitle.addClass('active');
-                    }
-                } else if ($(window).scrollTop() < (offsetTop + 10)) {
-                    thisTitle.removeClass('active');
-                }
-            });
-        }
-        $(".wom-m, .close-b ").on("click", function(event) {
-            event.preventDefault();
-            $(".right-m-block").slideToggle();
-            $(".right-m .bord").toggle();
-            $(".right-m ").toggleClass("active");
-            /// если уже нажали, то не всплывёт снова
-            clearInterval(womTime);
-        });
-        ///всплытие звонку консультатнта
-        let womTime = setTimeout(womUp, 10000);
-        function womUp() {
-            $(".right-m-block").slideToggle();
-            $(".right-m .bord").toggle();
-            $(".right-m ").toggleClass("active");
-        }
-        //// клик по квиз-некст поднимает вверх
-        function quizTopScroll() {
-            let scrollTo = $(".test-form-left").offset().top;
-            $("body, html").animate({
-                scrollTop: scrollTo
-            }, 300);
-        }
-        $(".quiz__next-wrap").on("click", quizTopScroll);
-        $(".test-item label").on("click", quizTopScroll);
-        ////
-        $("input[type='tel']").mask("+7-(999)-999-99-99");
-        if ($("body").find(".contacts").length > 0) {
-            var offsetHeight = $(".contacts").offset().top - $(window).height() - 300;
-            var mapFooter = false;
-            var urlMap =
-                "https://yandex.ru/maps/?um=constructor%3Af3f7095492c11965ac4fbfe75bd7d987f79179e1e44a4246497bb6298aa7bfcf&source=constructorLink";
-            mapActivate();
-            $(window).scroll(function(event) {
-                offsetHeight = $(".contacts").offset().top - $(window).height() - 300;
-                mapActivate();
-            });
-            function mapActivate() {
-                if (!mapFooter) {
-                    if ($(document).scrollTop() > offsetHeight) {
-                        $("#map").append(
-                            '<iframe src="' +
-                            urlMap +
-                            '"style="width: 100%; height: 100%;" frameborder="0"></iframe>'
-                        );
-                        mapFooter = true;
-                    }
-                }
-            }
-        }
-        $(".social-item").on("click", function(e) {
-            // console.log('22')
-            $(".social-item").removeClass("act");
-            $(this).addClass("act");
-        });
-        // portfolio
-        $(".portfolio-slider").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            //         autoplay: true,
-            //         autoplaySpeed: 3000,
-            dots: true,
-            dotsClass: 'dots-style',
-            prevArrow: '<div class="prev"></div>',
-            nextArrow: '<div class="next"></div>',
-            responsive: [{
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplay: false,
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplay: false,
-                    },
-                },
-                {
-                    breakpoint: 567,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplay: false,
-                    },
-                },
-            ],
-            // fade: true
-        });
-        $('#know-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            fade: true,
-            asNavFor: '#feedback-slider2',
-            prevArrow: $('.tsap'),
-            nextArrow: $('.tsan'),
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 776,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplay: false,
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                        autoplay: false,
-                    }
-                },
-            ]
-            // fade: true
-        })
-        $('#feedback-slider2').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            asNavFor: '#know-slider',
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 776,
-                    settings: {
-                        slidesToShow: 2,
-                        autoplay: false,
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 3,
-                        autoplay: false,
-                    }
-                },
-            ]
-            // fade: true
-        });
-        $('.fancyselect').fancySelect();
-        $(".ksp1").on("click", function(event) {
-            $("#know-slider").slick("slickPrev");
-        });
-        $(".ksp2").on("click", function(event) {
-            $("#know-slider").slick("slickNext");
-        });
-        $(".faq-acr-head").on("click", function() {
-            if ($(this).hasClass("active")) {
-                $(".crcv").removeClass("active");
-                $(".faq-acr-wrap").find(".bord").fadeOut();
-                $(".faq-acr-body").slideUp();
-                $(".faq-acr-head").removeClass("active");
-            } else {
-                $(".crcv").removeClass("active");
-                $(".faq-acr-wrap").find(".bord").fadeOut();
-                $(".faq-acr-body").slideUp();
-                $(".faq-acr-head").removeClass("active");
-                $(this).addClass("active");
-                var $this = $(this);
-                setTimeout(function() {
-                    $this.parents(".faq-acr-wrap").find(".crcv").addClass("active");
-                    $this.parents(".faq-acr-wrap").find(".bord").fadeIn();
-                }, 100);
-                $(this).next().slideDown();
-            }
-        });
-    </script>
-    <script>
-        if ($('body').find('.all').length > 0) {
-            $('.all-filtes__item').on('click', function(event) {
-                event.preventDefault();
-                if (!$(this).hasClass('active')) {
-                    $('.all-filtes__item').removeClass('active');
-                    $(this).addClass('active');
-                    t1 = $(this).text().trim();
-                    //         console.log(t1)
-                    itemFilter3(1, 12);
-                    //        $('.all__btn').removeClass('show1').find('.t16').text('Показать ещё');
-                }
-            });
-            var t1 = $('.all-filtes__item.active').text().trim();
-            var ns = 1;
-            function itemFilter3(num, num2) {
-                dataTab3(num2);
-                // console.log(1)
-            }
-            function dataTab3(num2) {
-                ns = 1;
-                // console.log(1)
-                $('.all-gal__item').each(function(index, el) {
-                        var tlt2 = $(this).data('order');
-                        console.log(t1)
-                        console.log(tlt2)
-                        if (tlt2.toLowerCase().indexOf(t1.toLowerCase()) !== -1) {
-                            if (ns > num2) {
-                                $(this).hide();
-                            } else {
-                                $(this).fadeIn();
-                            }
-                            ++ns;
-                        } else {
-                            $(this).hide();
-                        }
-                    }
-                );
-            }
-        }
-        $('.portfolio-slider__item').each(function(index, el) {
-            $(this).find('.portfolio-gal__item').attr('data-fancybox', 'er' + index);
-        });
-        $('.btn--burger-wrapper').on('click', function(event) {
-            event.preventDefault();
-            $('.right-menu').toggleClass('active');
-            $('.btn--burger-wrapper').toggleClass('active');
-        });
-        $('.btn-js-dcript').on('click', function(event) {
-            event.preventDefault();
-            var tlt = $(this).parents('.services-list__con').find('.t30').text().trim();
-            console.log(tlt)
-            $("html").addClass("stop");
-            $("#modal-call2").fadeIn();
-            $(".tl-val-js").val(tlt);
-            $(".tlt_js").text(tlt);
-        });
-        $('.btn-js-dcript2').on('click', function(event) {
-            event.preventDefault();
-            var tlt = $(this).parents('.services-list__item').find('.t30').text().trim();
-            console.log(tlt)
-            $("html").addClass("stop");
-            $("#modal-call2").fadeIn();
-            $(".tl-val-js").val(tlt);
-            $(".tlt_js").text(tlt);
-        });
-    </script>
-    <!-- Get user ip -->
-    <script type="text/javascript" src="source/ip.js"></script>
-    <!-- /Get user ip -->
+    <!-- модальное окно js -->
+    <script type="text/javascript" src="js/modal_window.js"></script>
+    <!-- форма контакта "В 1 клик оценим стоимость демонтажных работ в течение 10 мин" -->
+    <script src="js/form_contact.js"></script>
+    <!-- отправка quiz -->
+    <script src="js/quiz.js"></script>
+    <!-- возврат вверх страницы -->
+    <script type="text/javascript" src="js/script_add.js"></script>
+    <!-- jq -->
+    <script type="text/javascript" src="js/jquery.maskedinput.js" id="maskedinput-js"></script>
+    <!-- это сортировка по видам работ в портфолио -->
+    <script type="text/javascript" src="js/portfolio_sort.js"></script>
+    <!-- это для блоков в faq -->
+    <script type="text/javascript" src="js/jquery.fancybox.min.js" id="fancybox-js"></script>
+    <!-- рассчитать стоимость -->
+    <script type="text/javascript" src="js/count_price.js" id="test-js"></script>
 </body>
 </html>

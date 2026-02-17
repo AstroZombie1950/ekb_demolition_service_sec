@@ -39,32 +39,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Muller';
-  src: url("../fonts/MullerRegular.eot");
-  src: url("../fonts/MullerRegular.eot?#iefix") format('embedded-opentype'),
-        url("../fonts/MullerRegular.woff2") format('woff2'),
-        url("../fonts/MullerRegular.woff") format('woff'),
-        url("../fonts/MullerRegular.ttf") format('truetype'),
-        url("../fonts/MullerRegular.svg#MullerRegular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url("../fonts/MullerBold.eot");
-  src: url("../fonts/MullerBold.eot?#iefix") format('embedded-opentype'),
-        url("../fonts/MullerBold.woff2") format('woff2'),
-        url("../fonts/MullerBold.woff") format('woff'),
-        url("../fonts/MullerBold.ttf") format('truetype'),
-        url("../fonts/MullerBold.svg#MullerBold") format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -3278,7 +3252,7 @@ textarea::placeholder {
   transform: translateY(-50%) rotate(0deg);
   width: 0.7rem;
   height: 0.45rem;
-  background: url("../img/icons/ar-d.svg") center no-repeat;
+  background: url("../img/icons/arrow_down.svg") center no-repeat;
   background-size: cover;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -3289,7 +3263,7 @@ textarea::placeholder {
 }
 
 .nav .li-sub:hover::before {
-  background: url("../img/icons/ar-d.svg") center no-repeat;
+  background: url("../img/icons/arrow_down.svg") center no-repeat;
   background-size: cover;
   -webkit-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
@@ -3358,7 +3332,7 @@ textarea::placeholder {
 }
 
 .menu-item-has-children:hover::before {
-  background: url("../img/icons/ar-d.svg") center no-repeat;
+  background: url("../img/icons/arrow_down.svg") center no-repeat;
   background-size: cover;
   -webkit-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
@@ -3387,7 +3361,7 @@ textarea::placeholder {
   transform: translateY(-50%) rotate(0deg);
   width: 0.7rem;
   height: 0.4rem;
-  background: url("../img/icons/ar-d.svg") center no-repeat;
+  background: url("../img/icons/arrow_down.svg") center no-repeat;
   background-size: cover;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -6818,7 +6792,7 @@ margin-bottom: 1rem;
   height: 1.5rem;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/ar.svg") center no-repeat;
+  background: url("../img/icons/arrow_white.svg") center no-repeat;
   background-size: contain;
   z-index: 2;
 }
@@ -8452,7 +8426,7 @@ textarea.input {
   left: 0;
   width: 0.5rem;
   height: 0.75rem;
-  background: url("../img/footer/arf.svg") center no-repeat;
+  background: url("../img/icons/arrow_right.svg") center no-repeat;
   background-size: cover;
   z-index: 2;
 }

@@ -1,8 +1,3 @@
-// var lazyLoadInstance = new LazyLoad({
-//   elements_selector: ".lazy"
-
-// });
-
 
 var number = 0;
 var maxNumber = $(".test-item").length;
@@ -49,8 +44,6 @@ function btnActive(isValid) {
     }
 
 }
-
-// btnPrev.hide();
 
 var lbs = false;
 $('.btn-lbs').on('click', function (event) {
@@ -290,18 +283,6 @@ var defaultOptions = {
     cancelable: true
 }
 
-// var closeMod = false;
-//    $(document).mouseleave(function(event) {
-//        event = event || window.event;
-//        if (event.clientY < 0 || event.clientY < 3) {
-//            if (!closeMod) {
-//                $('#modal-wait').fadeIn();
-//                $('html').addClass('stop');
-//                closeMod = true;
-//            }
-
-//        }
-//    });
 setTimeout(function () {
     $('#modal-cons').fadeIn();
 }, 5000);
@@ -632,6 +613,4 @@ function testActive() {
             });
         });
     });
-
-
 }
