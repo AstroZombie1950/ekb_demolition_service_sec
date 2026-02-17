@@ -1,0 +1,416 @@
+h1.title-lg {
+  line-height: 1.3 !important;
+  margin-bottom: 0.1em !important;
+}
+.h1-subtitle {
+  font-size: 1.1rem; /* чуть меньше, чем сейчас */
+  font-style: italic;
+  color: #666; /* более светлый серый */
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Mini SEO + До/После (без растягивания картинки) ===== */
+
+.ba-block { padding: 40px 0; }
+
+.ba-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 992px){
+  .ba-grid{ grid-template-columns: 1fr; }
+}
+
+.ba-h2 { margin: 0 0 14px; }
+.ba-text { margin: 0 0 14px; }
+.ba-text p { margin: 0 0 12px; }
+.ba-text p:last-child { margin-bottom: 0; }
+
+/* Список с галками */
+.ba-list{
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.ba-item{
+  position: relative;
+  padding-left: 34px;
+  line-height: 1.35;
+}
+.ba-item:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  background: url("/wp-content/themes/site/assets/img/icons/galka1.svg") no-repeat center / 22px 22px;
+}
+
+/* ===============================
+   ДО/ПОСЛЕ — ДО слева, ПОСЛЕ справа
+   =============================== */
+
+.ba-compare{
+  --pos: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+/* ПОСЛЕ — базовая картинка (она задаёт высоту блоку) */
+.ba-compare .ba-after{
+  position: relative;
+  z-index: 1;
+}
+
+.ba-compare .ba-after img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ДО — сверху, обрезаем по ширине слева */
+.ba-compare .ba-before{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: var(--pos);
+  overflow: hidden;
+}
+
+.ba-compare .ba-before img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* подписи */
+.ba-compare .ba-img figcaption{
+  position: absolute;
+  bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  z-index: 4;
+}
+.ba-compare .ba-before figcaption{ left: 12px; }
+.ba-compare .ba-after  figcaption{ right: 12px; }
+
+/* range — поверх */
+.ba-compare .ba-range{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 5;
+}
+
+/* ручка */
+.ba-compare .ba-handle{
+  position: absolute;
+  top: 50%;
+  left: var(--pos);
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  z-index: 6;
+}
+
+/* линия */
+.ba-compare .ba-handle::before{
+  content:"";
+  position:absolute;
+  top: -999px;
+  bottom: -999px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,.9);
+}
+
+@media (max-width: 767px){
+  .ba-compare{ border-radius: 16px; }
+  .ba-compare .ba-img figcaption{ bottom: 10px; }
+}
+
+/* ---- FIX: ограничиваем высоту блока ДО/ПОСЛЕ ---- */
+.ba-compare{
+  /* подстрой цифры под дизайн */
+  height: clamp(260px, 38vw, 520px);
+}
+
+/* обе картинки делаем абсолютными, чтобы не влияли на высоту */
+.ba-compare .ba-after,
+.ba-compare .ba-before{
+  position: absolute;
+  inset: 0;
+}
+
+/* порядок слоёв */
+.ba-compare .ba-after{ z-index: 1; }
+.ba-compare .ba-before{
+  z-index: 2;
+  width: var(--pos);
+  overflow: hidden;
+}
+
+/* изображения — ровно в контейнер */
+.ba-compare .ba-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* на мобилке чуть ниже */
+@media (max-width: 767px){
+  .ba-compare{ height: clamp(220px, 60vw, 420px); }
+}
+/* подпись под блоком До/После */
+.ba-note{
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #8e8e8e;
+}
+
+@media (max-width: 767px){
+  .ba-note{
+    margin-top: 4px;
+    font-size: 12px;
+  }
+}
+.ba-grid--no-media{
+  grid-template-columns: 1fr !important;
+}
+
+
+
+/* ===============================
+   Таблица бюджетов (блок услуг)
+   =============================== */
+
+/* общий контейнер секции */
+.service-price-table .price-budgets{
+  margin: 18px 0 10px;
+}
+
+.service-price-table .price-budgets h3{
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.service-price-table .price-budgets p{
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+
+/* сноски/заметки (и верхняя, и нижняя) */
+.service-price-table .price-budgets__note{
+  margin: 12px 0 14px;
+  padding: 14px 16px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.service-price-table .price-budgets__note strong{
+  font-weight: 700;
+}
+
+/* внешний "карточный" контейнер таблицы (перекрывает фоновые линии) */
+.service-price-table .price-budgets__table{
+  position: relative;
+  background: #fff;              /* перекрываем линии/сетку фона */
+  border-radius: 22px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.08);
+  overflow: hidden;              /* чтобы радиус был чистым */
+}
+
+/* дополнительный щит на случай фоновых псевдо-элементов/линий шаблона */
+.service-price-table .price-budgets__table::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:#fff;
+  z-index:0;
+}
+
+/* горизонтальный скролл (на мобилке) */
+.service-price-table .price-budgets__scroll{
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* лёгкая “подсказка”, что блок скроллится (можно удалить, если не нужно) */
+@media (max-width: 767px){
+  .service-price-table .price-budgets__scroll::after{
+    content:"";
+    position:absolute;
+    top:0; right:0;
+    width: 28px; height: 100%;
+    pointer-events:none;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1));
+  }
+}
+
+/* сама таблица */
+.service-price-table table.budget-table{
+  width: 100%;
+  min-width: 760px;              /* чтобы на мобилке было что скроллить */
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+}
+
+/* убираем “линии внутри” – оставляем только очень мягкие разделители строк */
+.service-price-table table.budget-table th,
+.service-price-table table.budget-table td{
+  padding: 14px 16px;
+  vertical-align: top;
+  border: none;                  /* полностью убираем сетку */
+}
+
+.service-price-table table.budget-table thead th{
+  background: rgba(0,0,0,.03);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* мягкое разделение строк */
+.service-price-table table.budget-table tbody tr td{
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+/* скругления шапки */
+.service-price-table table.budget-table thead th:first-child{
+  border-top-left-radius: 22px;
+}
+.service-price-table table.budget-table thead th:last-child{
+  border-top-right-radius: 22px;
+}
+
+/* скругления низа */
+.service-price-table table.budget-table tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 22px;
+}
+.service-price-table table.budget-table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 22px;
+}
+
+/* чтобы последний столбец красиво переносился */
+.service-price-table table.budget-table td:last-child,
+.service-price-table table.budget-table th:last-child{
+  white-space: normal;
+  min-width: 340px;
+}
+
+/* первые 3 столбца не ломаем по словам */
+.service-price-table table.budget-table td:nth-child(1),
+.service-price-table table.budget-table td:nth-child(2),
+.service-price-table table.budget-table td:nth-child(3){
+  white-space: nowrap;
+}
+
+/* компактнее на мобиле */
+@media (max-width: 767px){
+  .service-price-table .price-budgets__note{
+    font-size: 13px;
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+
+  .service-price-table table.budget-table th,
+  .service-price-table table.budget-table td{
+    padding: 12px 12px;
+    font-size: 13px;
+  }
+
+  .service-price-table .price-budgets__table{
+    border-radius: 16px;
+  }
+
+  .service-price-table table.budget-table thead th:first-child{
+    border-top-left-radius: 16px;
+  }
+  .service-price-table table.budget-table thead th:last-child{
+    border-top-right-radius: 16px;
+  }
+  .service-price-table table.budget-table tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 16px;
+  }
+  .service-price-table table.budget-table tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 16px;
+  }
+}
+.sitemap-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:40px;
+  align-items:start;
+}
+
+.sitemap-title{
+  margin:0 0 16px !important;
+  padding:0 !important;
+  font-size:34px;
+  font-weight:700;
+  line-height:1.15;
+}
+
+.sitemap-list{
+  margin:0 !important;
+  padding:0 !important;
+  list-style:none;
+}
+
+.sitemap-list li{
+  margin:0 0 10px;
+}
+
+.sitemap-empty{
+  opacity:.75;
+  font-size:14px;
+}
+
+/* на планшете 2 колонки */
+@media (max-width: 1024px){
+  .sitemap-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+}
+
+/* на мобиле 1 колонка */
+@media (max-width: 640px){
+  .sitemap-grid{ grid-template-columns:1fr; }
+}
+
+/* чуть подчистим вывод плагина в колонке "Страницы" (если он печатает свои UL) */
+.sitemap-col--pages ul{
+  margin:0 !important;
+  padding:0 !important;
+  list-style:none;
+}
+.sitemap-col--pages li{
+  margin:0 0 10px;
+}
