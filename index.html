@@ -17,10 +17,13 @@
     <link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" id="new-css" href="css/new.css" type="text/css" media="all">
     <link rel="stylesheet" id="custom-style-css" href="css/custom.css" type="text/css" media="all">
-    <link rel="stylesheet" id="slick-css" href="css/slick-slider.css" type="text/css" media="all">
+    <link rel="stylesheet" id="slick-css" href="css/portfolio_slider.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal_window.css" type="text/css" media="all">
 	<!-- jQuery -->
     <script src="js/jquery-3.3.1.min.js" type="text/javascript" id="jquery-js"></script>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <!-- main -->
@@ -145,7 +148,7 @@
             </script>
         </header>
         <!-- меню -->
-        <div class="nav__wrap header__menu-mobile desktop active">
+        <div class="nav__wrap header__menu-mobile">
             <div class="close close-nav"></div>
             <div class="container-big sblock nav-wr ">
                 <div class="block-i-text mb">
@@ -172,8 +175,8 @@
                     </a>
                 </div>
                 <ul id="menu-osnovnoe-menju" class="nav t17">
-                    <li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-81"><a href="https://demontazh-servis.ru/" aria-current="page">Главная</a></li>
-                    <li id="menu-item-4033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4033"><a href="https://demontazh-servis.ru/nashi-uslugi/">Наши услуги</a>
+                    <li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-81"><a href="/" aria-current="page">Главная</a></li>
+                    <li id="menu-item-4033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4033"><a href="#">Наши услуги</a>
                         <ul class="sub-menu">
                             <li id="menu-item-4034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4034"><a href="/xxxxxx">Демонтаж квартиры под ключ</a></li>
                             <li id="menu-item-4082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4082"><a href="/xxxxxx">Демонтаж потолка</a></li>
@@ -191,7 +194,7 @@
                 <div class="flx">
                     <div class="items zam mrs">
                         <div class="items-img mr edit_ico">
-                            <img class="lazyload" data-src="img/zam.svg" alt="">
+                            <img class="lazyload" src="img/zam.svg" alt="">
                         </div>
                         <a href="#" class="fwb dark btn-zamer-js t14 ">
                             <span class="sh">Бесплатно заказать <br>выезд замерщика</span>
@@ -200,6 +203,8 @@
                 </div>
             </div>
         </div>
+
+
         <!--hero-->
         <div class="main-block rel">
             <div class="container rel">
@@ -434,7 +439,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Демонтаж пола</span>
@@ -449,7 +454,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Демонтаж перегородок</span>
@@ -464,7 +469,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Демонтаж настенных покрытий</span>
@@ -479,7 +484,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Демонтаж потолка</span>
@@ -494,7 +499,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Комплексный демонтаж</span>
@@ -509,7 +514,7 @@
                                     <span class="checkbox-rel rel">
                                         <span class="checkbox-psevdo t3">
                                             <span class="checkbox-psevdo-active">
-                                                <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                <img class="lazyload" src="img/ok_icon.svg" alt="">
                                             </span>
                                         </span>
                                         <span class="ttn tac t16">Другое</span>
@@ -518,7 +523,7 @@
                             </div>
                             <div class="test__btns">
                                 <button class="quiz__prev text mr" disabled="">
-                                    <img data-src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
+                                    <img src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
                                     <span class="span">Назад</span>
                                 </button>
                                 <div class="quiz__next-wrap">
@@ -541,7 +546,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">Да, требуется</span>
@@ -552,7 +557,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">Нет, не требуется</span>
@@ -560,12 +565,12 @@
                                     </label>
                                 </div>
                                 <div class="test-item-rb__right v3">
-                                    <img class="lazyload" data-src="img/calc/trash_container.png" alt="">
+                                    <img class="lazyload" src="img/calc/trash_container.png" alt="">
                                 </div>
                             </div>
                             <div class="test__btns">
                                 <button class="quiz__prev text mr" disabled="">
-                                    <img data-src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
+                                    <img src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
                                     <span class="span">Назад</span>
                                 </button>
                                 <div class="quiz__next-wrap">
@@ -588,7 +593,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">Да, есть</span>
@@ -599,7 +604,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">Нет</span>
@@ -607,12 +612,12 @@
                                     </label>
                                 </div>
                                 <div class="test-item-rb__right v4">
-                                    <img class="lazyload" data-src="img/calc/lift.png" alt="">
+                                    <img class="lazyload" src="img/calc/lift.png" alt="">
                                 </div>
                             </div>
                             <div class="test__btns">
                                 <button class="quiz__prev text mr" disabled="">
-                                    <img data-src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
+                                    <img src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
                                     <span class="span">Назад</span>
                                 </button>
                                 <div class="quiz__next-wrap">
@@ -635,7 +640,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">1-2 дня</span>
@@ -646,7 +651,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">В течение недели</span>
@@ -657,7 +662,7 @@
                                         <span class="checkbox-rel rad rel">
                                             <span class="checkbox-psevdo t3">
                                                 <span class="checkbox-psevdo-active">
-                                                    <img class="lazyload" data-src="img/ok_icon.svg" alt="">
+                                                    <img class="lazyload" src="img/ok_icon.svg" alt="">
                                                 </span>
                                             </span>
                                             <span class="ttn tac t24">В течение месяца</span>
@@ -665,12 +670,12 @@
                                     </label>
                                 </div>
                                 <div class="test-item-rb__right v5">
-                                    <img class="lazyload" data-src="img/calc/work.png" alt="">
+                                    <img class="lazyload" src="img/calc/work.png" alt="">
                                 </div>
                             </div>
                             <div class="test__btns">
                                 <button class="quiz__prev text mr" disabled="">
-                                    <img data-src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
+                                    <img src="img/calc/small_btn_arrow.png" alt="" class="arr-w mrm lazyload">
                                     <span class="span">Назад</span>
                                 </button>
                                 <div class="quiz__next-wrap">
@@ -743,7 +748,7 @@
                             </div>
                         </div>
                         <div class="test-item t-thank tac" style="display: none;">
-                            <img data-src="" alt="" class="tt-ok msm lazyload">
+                            <img alt="" class="tt-ok msm lazyload">
                             <h4 class="fw9 tac mb t36 ttn">Спасибо!</h4>
                             <p class="t24 ttn">Мы свяжемся в Вами в ближайшее время <br>и вышлем всю необходимую информацию</p>
                         </div>
@@ -917,7 +922,7 @@
                 <!--Демонтаж домов-->
                 <div class="services-list__item">
                     <div class="services-list__bg">
-                        <img src="img/services/houses.jpg" data-src="" alt="" class="lazyloaded">
+                        <img src="img/services/houses.jpg" alt="" class="lazyloaded">
                     </div>
                     <div class="services-list__con">
                         <a href="#" class="dark db t30 fwb mb2">Демонтаж домов</a>
@@ -946,7 +951,7 @@
                 <!--Погрузка и вывоз мусора-->
                 <div class="services-list__item">
                     <div class="services-list__bg">
-                        <img src="img/services/trash.jpg" data-src="" alt="" class="lazyloaded">
+                        <img src="img/services/trash.jpg" alt="" class="lazyloaded">
                     </div>
                     <div class="services-list__con">
                         <a href="#" class="dark db t30 fwb mb2">Погрузка и вывоз мусора</a>
@@ -1121,34 +1126,27 @@
     <div class="section portfolio">
         <div class="container">
             <h2 class="title fw3 tac mlg fade_in"><span class="fwb">Наши работы</span> (портфолио)</h2>
-            <div class="slick-initialized slick-slider slick-dotted">
-                <div class="prev slick-arrow" style=""></div>
-                <div class="slick-list draggable">
-                    <div class="slick-track portfolio-track" style="opacity: 1; width: 15678px; transform: translate3d(-1206px, 0px, 0px);">
+            <div class="portfolio-slider">
+                <div class="prev"></div>
+                    <div class="portfolio-track">
                         <!--один-->
-                        <div class="portfolio-slider__item vdbl rel slick-slide slick-cloned" style="width: 1206px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control05" data-slick-index="-1" aria-hidden="true">
-                            <div class="portfolio__t2">
-                                <div class="t36 fwb">Демонтаж плитки с клеем</div>
-                                <div class="t24 mb">Демонтаж плитки с пола и стен 42 м2</div>
+                        <div class="portfolio-slide">
+                            <div class="portfolio-left">
+                                <div class="portfolio__t2">
+                                    <div class="t36 fwb">Демонтаж плитки с клеем</div>
+                                    <div class="t24 mb">Демонтаж плитки с пола и стен 42 м2</div>
+                                </div>
+                                <div class="portfolio-main">
+                                    <img src="img/portfolio/plitka.jpeg" alt="" class="portfolio-main__img">
+                                </div>
+                                <div class="portfolio-thumbs">
+                                    <img src="img/portfolio/plitka.jpeg" class="portfolio-thumb active">
+                                    <img src="img/portfolio/plitka1.jpeg" class="portfolio-thumb">
+                                    <img src="img/portfolio/plitka2.jpeg" class="portfolio-thumb">
+                                    <img src="img/portfolio/plitka3.jpeg" class="portfolio-thumb">
+                                </div>
                             </div>
-                            <div class="portfolio-gal">
-                                <a href="img/portfolio/plitka.jpeg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er6" tabindex="-1">
-                                    <img src="img/portfolio/plitka.jpeg" alt="" class="lazyloaded">
-                                </a>
-                                <a href="img/portfolio/plitka1.jpeg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er6" tabindex="-1">
-                                    <img src="img/portfolio/plitka1.jpeg" alt="" class="lazyload">
-                                </a>
-                                <a href="img/portfolio/plitka2.jpeg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er6" tabindex="-1">
-                                    <img src="img/portfolio/plitka2.jpeg" alt="" class="lazyload">
-                                </a>
-                                <a href="img/portfolio/plitka3.jpeg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er6" tabindex="-1">
-                                    <img src="img/portfolio/plitka3.jpeg" alt="" class="lazyloaded">
-                                </a>
-                                <a href="img/portfolio/plitka4.jpeg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er6" tabindex="-1">
-                                    <img src="img/portfolio/plitka4.jpeg" alt="" class="lazyloaded">
-                                </a>
-                            </div>
-                            <div class="portfolio-desc">
+	                        <div class="portfolio-right">
                                 <ul class="list portfolio-list mb">
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
@@ -1189,32 +1187,26 @@
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
                                 </div>
-                            </div>
+	                        </div>
                         </div>
                         <!--два-->
-                        <div class="portfolio-slider__item no-vid rel slick-slide slick-current slick-active" style="width: 1206px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" data-slick-index="0" aria-hidden="false">
-                            <div class="portfolio__t2">
-                                <div class="t36 fwb">Демонтаж бетонных стен</div>
-                                <div class="t24 mb">(ж/б стены)</div>
+                        <div class="portfolio-slide">
+                            <div class="portfolio-left">
+                                <div class="portfolio__t2">
+                                    <div class="t36 fwb">Демонтаж бетонных стен</div>
+                                    <div class="t24 mb">(ж/б стены)</div>
+                                </div>
+                                <div class="portfolio-main">
+                                    <img src="img/portfolio/proem.jpg" alt="" class="portfolio-main__img">
+                                </div>
+                                <div class="portfolio-thumbs">
+                                    <img src="img/portfolio/proem.jpg" class="portfolio-thumb active">
+                                    <img src="img/portfolio/proem1.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/proem2.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/proem3.jpg" class="portfolio-thumb">
+                                </div>
                             </div>
-                            <div class="portfolio-gal">
-                                <a href="img/portfolio/proem.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er1" tabindex="0">
-                                    <img src="img/portfolio/proem.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/proem1.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er1" tabindex="0">
-                                    <img src="img/portfolio/proem1.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/proem2.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er1" tabindex="0">
-                                    <img src="img/portfolio/proem2.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/proem3.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er1" tabindex="0">
-                                    <img src="img/portfolio/proem3.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/proem4.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er1" tabindex="0">
-                                    <img src="img/portfolio/proem4.jpg" alt="" class=" ls-is-cached lazyloaded">
-                                </a>
-                            </div>
-                            <div class="portfolio-desc">
+	                        <div class="portfolio-right">
                                 <ul class="list portfolio-list mb">
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
@@ -1255,38 +1247,29 @@
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
                                 </div>
-                            </div>
+	                        </div>
                         </div>
                         <!--три-->
-                        <div class="portfolio-slider__item no-vid rel slick-slide" style="width: 1206px;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" data-slick-index="1" aria-hidden="true">
-                            <div class="portfolio__t2">
-                                <div class="t36 fwb">Демонтаж железобетона и бетонных конструкций</div>
-                                <div class="t24 mb">(пол, стены, потолок)</div>
+                        <div class="portfolio-slide">
+                            <div class="portfolio-left">
+                                <div class="portfolio__t2">
+                                    <div class="t36 fwb">Демонтаж железобетона и бетонных конструкций</div>
+                                    <div class="t24 mb">(пол, стены, потолок)</div>
+                                </div>
+                                <div class="portfolio-main">
+                                    <img src="img/portfolio/beton.jpg" alt="" class="portfolio-main__img">
+                                </div>
+                                <div class="portfolio-thumbs">
+                                    <img src="img/portfolio/beton.jpg" class="portfolio-thumb active">
+                                    <img src="img/portfolio/beton1.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/beton2.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/beton3.jpg" class="portfolio-thumb">
+                                    <!-- <img src="img/portfolio/beton4.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/beton5.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/beton6.jpg" class="portfolio-thumb"> -->
+                                </div>
                             </div>
-                            <div class="portfolio-gal">
-                                <a href="img/portfolio/beton1.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton1.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton2.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton2.jpg" alt="" class=" ls-is-cached lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton3.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton3.jpg"  alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton4.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton4.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton5.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton5.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton6.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton6.jpg" alt="" class=" lazyloaded">
-                                </a>
-                                <a href="img/portfolio/beton.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er2" tabindex="-1">
-                                    <img src="img/portfolio/beton.jpg" alt="" class=" lazyloaded">
-                                </a>
-                            </div>
-                            <div class="portfolio-desc">
+	                        <div class="portfolio-right">
                                 <ul class="list portfolio-list mb">
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
@@ -1327,54 +1310,46 @@
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
                                 </div>
-                            </div>
+	                        </div>
                         </div>
                         <!--четыре-->
-                        <div class="portfolio-slider__item vdbl rel slick-slide" style="width: 1206px;" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04" data-slick-index="4" aria-hidden="true">
-                            <div class="portfolio__t2">
-                                <div class="t36 fwb">Демонтаж штукатурки со стяжкой</div>
-                                <div class="t24 mb">
+                        <div class="portfolio-slide">
+                            <div class="portfolio-left">
+                                <div class="portfolio__t2">
+                                    <div class="t36 fwb">Демонтаж штукатурки со стяжкой</div>
+                                    <div class="t24 mb"></div>
+                                </div>
+                                <div class="portfolio-main">
+                                    <img src="img/portfolio/shtuk.jpg" alt="" class="portfolio-main__img">
+                                </div>
+                                <div class="portfolio-thumbs">
+                                    <img src="img/portfolio/shtuk.jpg" class="portfolio-thumb active">
+                                    <img src="img/portfolio/shtuk1.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/shtuk2.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/shtuk3.jpg" class="portfolio-thumb">
+                                    <!-- <img src="img/portfolio/shtuk4.jpg" class="portfolio-thumb">
+                                    <img src="img/portfolio/shtuk5.jpg" class="portfolio-thumb"> -->
                                 </div>
                             </div>
-                            <div class="portfolio-gal">
-                                <a href="img/portfolio/shtuk.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk.jpg" alt="" class=" lazyload">
-                                </a>
-                                <a href="img/portfolio/shtuk1.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk1.jpg" alt="" class=" lazyload">
-                                </a>
-                                <a href="img/portfolio/shtuk2.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk2.jpg" alt="" class=" lazyload">
-                                </a>
-                                <a href="img/portfolio/shtuk3.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk3.jpg" alt="" class=" lazyload">
-                                </a>
-                                <a href="img/portfolio/shtuk4.jpg" style="" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk4.jpg" alt="" class=" lazyload">
-                                </a>
-                                <a href="img/portfolio/shtuk5.jpg" style="display: none;" class="portfolio-gal__item fancy-class" data-fancybox="er5" tabindex="-1">
-                                    <img src="img/portfolio/shtuk5.jpg" alt="" class=" lazyload">
-                                </a>
-                            </div>
-                            <div class="portfolio-desc">
+	                        <div class="portfolio-right">
                                 <ul class="list portfolio-list mb">
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
-                                            <img data-src="img/icons/location.svg" alt="" class=" lazyload">
+                                            <img src="img/icons/location.svg" alt="" class=" lazyload">
                                         </div>
                                         <div class="t18">
                                             <span class="fwb">Адрес:</span> Азина, 26</div>
                                     </li>
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
-                                            <img data-src="img/icons/ruble.svg" alt="" class=" lazyload">
+                                            <img src="img/icons/ruble.svg" alt="" class=" lazyload">
                                         </div>
                                         <div class="t18">
                                             <span class="fwb">Общая стоимость:</span> 52 000 руб</div>
                                     </li>
                                     <li class="list__item row-vcenter">
                                         <div class=" icon-list ">
-                                            <img data-src="img/icons/clock.svg" alt="" class=" lazyload">
+                                            <img src="img/icons/clock.svg" alt="" class=" lazyload">
                                         </div>
                                         <div class="t18">
                                             <span class="fwb">Сроки:</span> 2 дня</div>
@@ -1396,23 +1371,11 @@
                                         <span class="btn-blick"></span>
                                         <span class="t16 ">Заказать демонтаж</span>
                                     </a>
-                                    <div class="items mrs">
-                                        <div class="items-img mr edit_ico">
-                                            <img class="lazyload" src="img/icons/calc.svg" alt="">
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
+	                        </div>
                         </div>
                     </div>
-                </div>
-                <div class="next slick-arrow" style=""></div>
-                <ul class="dots-style" style="" role="tablist">
-                    <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li>
-                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 6" tabindex="-1">2</button></li>
-                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 6" tabindex="-1">3</button></li>
-                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 6" tabindex="-1">4</button></li>
-                </ul>
+                <div class="next"></div>
             </div>
         </div>
     </div>
@@ -1884,7 +1847,7 @@
                         <div class="items-img mr edit_ico">
                             <img class=" lazyloaded" src="img/zam.svg" alt="">
                         </div>
-                        <a href="https://demontazh-servis.ru/#" class="white t14 modal open-modal">
+                        <a href="#" class="white t14 modal open-modal">
                             <span class="sh">Бесплатно заказать <br>выезд замерщика</span>
                         </a>
                     </div>
@@ -2002,7 +1965,7 @@
                         <div class="t13 mr">Среднее время <br>ответа <span class="fwb">23 секунды</span>
                         </div>
                         <a href="https://wa.me/73435551100?text=Здравствуйте!%20Интересует%20демонтаж%20в%20Екатеринбурге." rel="nofollow" class="t13 fwb dark header-wa">
-                            <img src="img/icons/wa.svg" data-src="https://demontazh-servis.ru/wp-content/themes/site/" alt="" class="">Написать
+                            <img src="img/icons/wa.svg" alt="" class="">Написать
                         </a>
                     </div>
                 </div>
@@ -2079,5 +2042,32 @@
     <script type="text/javascript" src="js/jquery.fancybox.min.js" id="fancybox-js"></script>
     <!-- рассчитать стоимость -->
     <script type="text/javascript" src="js/count_price.js" id="test-js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $('.portfolio-track').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        speed: 600,
+        adaptiveHeight: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+    $(document).on('click', '.portfolio-thumb', function(){
+
+        var newSrc = $(this).attr('src');
+        var slide = $(this).closest('.portfolio-slide');
+
+        slide.find('.portfolio-main__img').attr('src', newSrc);
+
+        slide.find('.portfolio-thumb').removeClass('active');
+        $(this).addClass('active');
+
+    });
+    </script>
+    <!-- липкое верхнее меню на десктоп -->
+    <script type="text/javascript" src="js/sticky_menu.js"></script>
 </body>
 </html>
