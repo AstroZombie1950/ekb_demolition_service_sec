@@ -192,7 +192,7 @@ $(function () {
             link.setAttribute('target', "_blank");
             link.setAttribute('download', '');
             if (navigator.userAgent.indexOf('Mac') > 0) {
-                window.location = $('.pdf-pdf').val();
+                simulate(link, "click");
             } else {
                 simulate(link, "click");
             }
@@ -215,7 +215,6 @@ $(function () {
             processData: false,
             data: fd,
             success: function (msg) {
-                window.location.href = $('.thank-url').val();
                 formThis.find('.btn').removeAttr('disabled');
                 $('form').trigger('reset');
             },
@@ -583,7 +582,7 @@ function testActive() {
                 link.setAttribute('download', '');
 
                 if (navigator.userAgent.indexOf('Mac') > 0) {
-                    window.location = $('.pdf-pdf').val();
+                    simulate(link, "click");
                 } else {
                     simulate(link, "click");
                 }
@@ -606,7 +605,6 @@ function testActive() {
                 processData: false,
                 data: fd,
                 success: function (msg) {
-                    window.location.href = $('.thank-url').val();
                     formThis.find('.btn').removeAttr('disabled');
                     $('form').trigger('reset');
                 },

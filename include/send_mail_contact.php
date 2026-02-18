@@ -10,17 +10,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		exit;
 	}
 
-	$to = "yourmail@gmail.com"; // ← сюда почту
-	$subject = "Новая заявка с главного экрана";
+	$to = "TEMPMAIL@gmail.com"; // ← сюда почту
+	$subject = "Новая заявка — Демонтаж";
 
 	$message = "
-	Новая заявка:
+	Форма Оценим стоимость демонтажных работ
 
 	Вид работ: $works
 	Телефон: $phone
 	";
 
-	$headers = "From: no-reply@yourdomain.ru\r\n"; // ← сюда домен
+	$headers = "From: no-reply@" . $_SERVER["SERVER_NAME"] . "\r\n";
 	$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 	if (mail($to, $subject, $message, $headers)) {

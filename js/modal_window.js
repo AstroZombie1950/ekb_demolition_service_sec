@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formData = new FormData();
     formData.append("phone", phone);
 
-    fetch("../include/send_email.php", {
+    fetch("/include/send_email.php", {
       method: "POST",
       body: formData,
     })

@@ -28,9 +28,9 @@ if (strlen($phone_clean) < 10) {
 }
 
 // email получателя
-$to = "your@email.ru"; // <-- почта
+$to = "TEMPMAIL@gmail.com"; // <-- почта
 
-$subject = "Новая заявка — Портфолио";
+$subject = "Новая заявка — Демонтаж";
 
 $message = "
 $title

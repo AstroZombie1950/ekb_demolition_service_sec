@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		formData.append("case", contactType);
 		formData.append("phone", phone);
 		
-		fetch("../include/send_quiz.php", {
+		fetch("/include/send_quiz.php", {
 			method: "POST",
 			body: formData
 		})

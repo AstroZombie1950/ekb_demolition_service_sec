@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		formData.append("works", works);
 		formData.append("phone", phone);
 
-		fetch("../include/send_mail_contact.php", {
+		fetch("/include/send_mail_contact.php", {
 			method: "POST",
 			body: formData
 		})

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
 	const form = document.getElementById("portfolioForm");
 	const messageBlock = form.querySelector(".form-message");
 	const phoneInput = form.querySelector("input[name='phone']");
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		const formData = new FormData(form);
 
-		fetch("../include/send_mail_portfolio.php", {
+		fetch("/include/send_mail_portfolio.php", {
 			method: "POST",
 			body: formData
 		})
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			submitBtn.disabled = false;
 
 			messageBlock.style.display = "block";
-
+			
 			if (data.success) {
 				messageBlock.style.color = "green";
 				messageBlock.textContent = "Спасибо! Мы свяжемся с вами в ближайшее время.";
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			} else {
 				messageBlock.style.color = "red";
 				messageBlock.textContent = data.message;
-				alert("231231");
 			}
 		})
 		.catch(() => {
