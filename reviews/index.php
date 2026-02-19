@@ -242,6 +242,8 @@
     <script src="../js/form_contact.js"></script>
     <!-- отправка quiz -->
     <script src="../js/quiz.js"></script>
+    <!-- отправка заявки CTA -->
+    <script type="text/javascript" src="../js/send_mail_portfolio.js"></script>
     <!-- возврат вверх страницы -->
     <script type="text/javascript" src="../js/script_add.js"></script>
     <!-- jq -->
@@ -277,7 +279,5 @@
     </script>
     <!-- липкое верхнее меню на десктоп -->
     <script type="text/javascript" src="../js/sticky_menu.js"></script>
-    <!-- отправка заявки -->
-    <script type="text/javascript" src="../js/send_mail_portfolio.js"></script>
 </body>
 </html>
