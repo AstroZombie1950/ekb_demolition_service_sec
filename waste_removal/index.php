@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- main -->
-    <div class="main" id="main">
+    <div class="main" id="main waste_removal">
         <!--head-->
         <?php include '../include/header.html'; ?>
         <!--hero-->

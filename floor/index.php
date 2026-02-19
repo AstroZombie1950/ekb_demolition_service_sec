@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- main -->
-    <div class="main" id="main">
+    <div class="main" id="main floor">
         <!--head-->
         <?php include '../include/header.html'; ?>
         <!--hero-->

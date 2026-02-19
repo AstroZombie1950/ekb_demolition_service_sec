@@ -281,7 +281,7 @@
 
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/services/ceiling.png" alt="Демонтаж потолка в квартире">
+                    <img class="lazyloaded" src="/img/service_page/ceiling.png" alt="Демонтаж потолка в квартире">
                     <section class="seo-text">
                         <h2>Демонтаж потолка в Екатеринбурге</h2>
 
