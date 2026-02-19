@@ -28,11 +28,11 @@
 </head>
 <body>
     <!-- main -->
-    <div class="main" id="main floor">
+    <div class="main" id="main">
         <!--head-->
         <?php include '../include/header.html'; ?>
         <!--hero-->
-        <div class="main-block rel">
+        <div class="main-block rel floor">
             <div class="container rel">
                 <div class="main__cont rel">
                     <!--текст-->
