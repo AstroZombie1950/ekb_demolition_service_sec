@@ -1,6 +1,45 @@
-.main-block{
+.complex {
 	position: relative;
     background: url(/img/service_page/home.png) no-repeat top center;
+    background-size: cover;
+}
+
+.buildings {
+	position: relative;
+    background: url(/img/service_page/buildings.png) no-repeat top center;
+    background-size: cover;
+}
+
+.ceiling {
+	position: relative;
+    background: url(/img/service_page/ceiling.png) no-repeat top center;
+    background-size: cover;
+}
+
+.f_selfleveling {
+	position: relative;
+    background: url(/img/service_page/f_selfleveling.png) no-repeat top center;
+    background-size: cover;
+}
+
+
+.floor {
+	position: relative;
+    background: url(/img/service_page/floor.png) no-repeat top center;
+    background-size: cover;
+}
+
+
+.walls {
+	position: relative;
+    background: url(/img/service_page/walls.png) no-repeat top center;
+    background-size: cover;
+}
+
+
+.waste_removal {
+	position: relative;
+    background: url(/img/service_page/waste_removal.png) no-repeat top center;
     background-size: cover;
 }
 

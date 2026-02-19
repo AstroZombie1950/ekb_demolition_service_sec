@@ -32,7 +32,7 @@
         <!--head-->
         <?php include '../include/header.html'; ?>
         <!--hero-->
-        <div class="main-block rel">
+        <div class="main-block rel complex">
             <div class="container rel">
                 <div class="main__cont rel">
                     <!--текст-->
@@ -178,7 +178,7 @@
             </section>
             <!-- ================= Калькулятор ================= -->
             <?php include '../include/calc.html'; ?>
-            <!-- ================= Бюджет демонтажа (таблица) ================= -->
+            <!-- ================= Бюджет (таблица) ================= -->
             <section class="service-budget ba-block">
                 <div class="container">
 
