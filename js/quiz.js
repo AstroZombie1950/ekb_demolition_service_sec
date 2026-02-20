@@ -34,14 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 		.then(response => response.text())
 		.then(data => {
-
-			if (data === "success") {
-				form.querySelector(".form-success").style.display = "block";
+			if (data.trim() === "success") {
+				form.querySelectorAll(".test-item").forEach(el => {
+					el.style.display = "none";
+				});
+				form.querySelector(".t-thank").style.display = "block";
 				form.reset();
 			} else {
 				alert("Ошибка отправки");
 			}
-
 		})
 		.catch(() => {
 			alert("Ошибка соединения");
