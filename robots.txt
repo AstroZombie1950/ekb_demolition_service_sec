@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /include/
+
+Host: https://demontage24.ru
+Sitemap: https://demontage24.ru/sitemap.xml

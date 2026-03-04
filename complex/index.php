@@ -250,7 +250,7 @@
             <div class="services-top mb">
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/service_page/home.png">
+                    <img class="lazyloaded" src="/img/service_page/home.png" alt="Комплексный демонтаж под ключ">
                     <section class="seo-text">
                         <h2>Демонтаж квартиры под ключ в Екатеринбурге</h2>
 

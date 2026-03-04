@@ -247,7 +247,7 @@
             <div class="services-top mb">
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/service_page/f_selfleveling.png" alt="Демонтаж стяжки пола в квартире Екатеринбург">
+                    <img class="lazyloaded" src="/img/service_page/f_selfleveling.png" alt="Демонтаж стяжки пола в квартире">
                     <section class="seo-text">
                         <h2>Демонтаж стяжки пола в квартирах и домах</h2>
                         <p>

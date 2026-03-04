@@ -249,7 +249,7 @@
             <div class="services-top mb">
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/service_page/walls.png" alt="Демонтаж стен и перегородок в Екатеринбурге">
+                    <img class="lazyloaded" src="/img/service_page/walls.png" alt="Демонтаж стен и перегородок">
                     <section class="seo-text">
                         <h2>Профессиональный демонтаж стен в квартире и офисе</h2>
                         <p>

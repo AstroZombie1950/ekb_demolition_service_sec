@@ -258,7 +258,7 @@
             <div class="services-top mb">
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/service_page/buildings.png" alt="Демонтаж дома в Екатеринбурге">
+                    <img class="lazyloaded" src="/img/service_page/buildings.png" alt="Демонтаж дома">
                     <section class="seo-text">
                         <h2>Демонтаж частных домов и строений под ключ</h2>
                         <p>

@@ -239,7 +239,7 @@
             <div class="services-top mb">
                 <!--левый-->
                 <div class="t16 tac services-top__item">
-                    <img class="lazyloaded" src="/img/service_page/floor.png">
+                    <img class="lazyloaded" src="/img/service_page/floor.png" alt="Демонтаж пола">
                     <section class="seo-text">
                         <h2>Когда требуется демонтаж пола?</h2>
                         <p>
