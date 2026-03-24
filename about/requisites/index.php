@@ -26,7 +26,7 @@
 <body>
     <!-- main -->
     <div class="main" id="main">
-        <?php include '../include/header.html'; ?>
+        <?php include '../../include/header.html'; ?>
     </div>
     
     <!-- основной раздел -->
@@ -71,7 +71,7 @@
             <div class="info-section">
                 <h2 class="info-section-title">О деятельности</h2>
                 <p>Основное направление — демонтаж квартир, частных домов и помещений, а также вывоз строительного мусора.</p>
-                <p>Ознакомиться с полным перечнем работ можно на странице <a href="https://demontage24.ru/services/" class="info-link">«Наши услуги»</a>.</p>
+                <p>Ознакомиться с полным перечнем работ можно на странице <a href="/#services" class="info-link">«Наши услуги»</a>.</p>
             </div>
 
             <!-- полезные разделы -->
@@ -79,24 +79,24 @@
                 <h2 class="info-section-title">Полезные разделы сайта</h2>
                 <p>Для получения дополнительной информации вы можете перейти в соответствующие разделы:</p>
                 <ul class="info-list info-list--links">
-                    <li><a href="https://demontage24.ru/about/" class="info-link">О компании</a></li>
-                    <li><a href="https://demontage24.ru/partners/" class="info-link">Партнёрам</a></li>
-                    <li><a href="https://demontage24.ru/portfolio/" class="info-link">Портфолио</a></li>
-                    <li><a href="https://demontage24.ru/reviews/" class="info-link">Отзывы</a></li>
-                    <li><a href="https://demontage24.ru/faq/" class="info-link">FAQ</a></li>
+                    <li><a href="/about/" class="info-link">О компании</a></li>
+                    <li><a href="/partners/" class="info-link">Партнёрам</a></li>
+                    <li><a href="/portfolio/" class="info-link">Портфолио</a></li>
+                    <li><a href="/reviews/" class="info-link">Отзывы</a></li>
+                    <li><a href="/faq/" class="info-link">FAQ</a></li>
                 </ul>
             </div>
 
             <!-- связь -->
             <div class="info-section">
                 <h2 class="info-section-title">Связь</h2>
-                <p>По всем вопросам, связанным с услугами, сотрудничеством или документами, вы можете связаться через страницу <a href="https://demontage24.ru/contacts/" class="info-link">«Контакты»</a>.</p>
+                <p>По всем вопросам, связанным с услугами, сотрудничеством или документами, вы можете связаться через страницу <a href="/contacts/" class="info-link">«Контакты»</a>.</p>
             </div>
 
         </div>
     </div>
 
-    <?php include '../include/footer.html'; ?>
+    <?php include '../../include/footer.html'; ?>
 
     <!-- прокрутка страницы вверх -->
     <div class="to_top act"></div>
@@ -143,21 +143,21 @@
         </div>
     </div>
     <!-- модальное окно js -->
-    <script type="text/javascript" src="../js/modal_window.js"></script>
+    <script type="text/javascript" src="../../js/modal_window.js"></script>
     <!-- форма контакта "В 1 клик оценим стоимость демонтажных работ в течение 10 мин" -->
-    <script src="../js/form_contact.js"></script>
+    <script src="../../js/form_contact.js"></script>
     <!-- отправка quiz -->
-    <script src="../js/quiz.js"></script>
+    <script src="../../js/quiz.js"></script>
     <!-- возврат вверх страницы -->
-    <script type="text/javascript" src="../js/script_add.js"></script>
+    <script type="text/javascript" src="../../js/script_add.js"></script>
     <!-- jq -->
-    <script type="text/javascript" src="../js/jquery.maskedinput.js" id="maskedinput-js"></script>
+    <script type="text/javascript" src="../../js/jquery.maskedinput.js" id="maskedinput-js"></script>
     <!-- это сортировка по видам работ в портфолио -->
-    <script type="text/javascript" src="../js/portfolio_sort.js"></script>
+    <script type="text/javascript" src="../../js/portfolio_sort.js"></script>
     <!-- это для блоков в faq -->
-    <script type="text/javascript" src="../js/jquery.fancybox.min.js" id="fancybox-js"></script>
+    <script type="text/javascript" src="../../js/jquery.fancybox.min.js" id="fancybox-js"></script>
     <!-- рассчитать стоимость -->
-    <script type="text/javascript" src="../js/count_price.js" id="test-js"></script>
+    <script type="text/javascript" src="../../js/count_price.js" id="test-js"></script>
     <!-- Slick JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
@@ -184,6 +184,6 @@
     });
     </script>
     <!-- липкое верхнее меню на десктоп -->
-    <script type="text/javascript" src="../js/sticky_menu.js"></script>
+    <script type="text/javascript" src="../../js/sticky_menu.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@
             </div>
 
             <h1 class="info-title">FAQ — Вопросы и ответы</h1>
-            <p class="info-intro">На этой странице собраны ответы на частые вопросы по демонтажу квартир, частных домов, помещений и вывозу мусора. Если вы не нашли нужную информацию, свяжитесь с нами через страницу <a href="https://demontage24.ru/contacts/" class="info-link">«Контакты»</a>.</p>
+            <p class="info-intro">На этой странице собраны ответы на частые вопросы по демонтажу квартир, частных домов, помещений и вывозу мусора. Если вы не нашли нужную информацию, свяжитесь с нами через страницу <a href="/contacts/" class="info-link">«Контакты»</a>.</p>
 
             <div class="faq-list">
 
@@ -137,7 +137,7 @@
 
                 <div class="faq-item">
                     <button class="faq-question">Делаете ли вы демонтаж перед ремонтом?</button>
-                    <div class="faq-answer"><p>Да, это одна из самых частых задач. Мы подготавливаем объект под следующий этап работ: ремонт, отделку, перепланировку или строительные работы.</p><p>Подробнее о формате работ можно посмотреть на странице <a href="https://demontage24.ru/services/" class="info-link">«Наши услуги»</a>.</p></div>
+                    <div class="faq-answer"><p>Да, это одна из самых частых задач. Мы подготавливаем объект под следующий этап работ: ремонт, отделку, перепланировку или строительные работы.</p><p>Подробнее о формате работ можно посмотреть на странице <a href="/#services" class="info-link">«Наши услуги»</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
@@ -157,7 +157,7 @@
 
                 <div class="faq-item">
                     <button class="faq-question">Работаете ли вы с партнёрами и бригадами?</button>
-                    <div class="faq-answer"><p>Да, мы открыты к сотрудничеству со специалистами и компаниями из смежных направлений: дизайнерами, отделочниками, мастерами по ремонту, строительными бригадами и другими партнёрами.</p><p>Подробнее об этом можно узнать на странице <a href="https://demontage24.ru/partners/" class="info-link">«Партнёрам»</a>.</p></div>
+                    <div class="faq-answer"><p>Да, мы открыты к сотрудничеству со специалистами и компаниями из смежных направлений: дизайнерами, отделочниками, мастерами по ремонту, строительными бригадами и другими партнёрами.</p><p>Подробнее об этом можно узнать на странице <a href="/partners/" class="info-link">«Партнёрам»</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
@@ -197,27 +197,27 @@
 
                 <div class="faq-item">
                     <button class="faq-question">Где можно посмотреть примеры ваших работ?</button>
-                    <div class="faq-answer"><p>Примеры выполненных объектов и подход к работе можно посмотреть на странице <a href="https://demontage24.ru/portfolio/" class="info-link">«Портфолио»</a>.</p></div>
+                    <div class="faq-answer"><p>Примеры выполненных объектов и подход к работе можно посмотреть на странице <a href="/portfolio/" class="info-link">«Портфолио»</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">Где посмотреть отзывы?</button>
-                    <div class="faq-answer"><p>Отзывы клиентов размещены на отдельной странице <a href="https://demontage24.ru/reviews/" class="info-link">«Отзывы»</a>.</p></div>
+                    <div class="faq-answer"><p>Отзывы клиентов размещены на отдельной странице <a href="/reviews/" class="info-link">«Отзывы»</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">Где можно узнать информацию о компании?</button>
-                    <div class="faq-answer"><p>Основная информация размещена на странице <a href="https://demontage24.ru/about/" class="info-link">«О нас»</a>.</p></div>
+                    <div class="faq-answer"><p>Основная информация размещена на странице <a href="/about/" class="info-link">«О нас»</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">Где посмотреть реквизиты?</button>
-                    <div class="faq-answer"><p>Реквизиты доступны на странице <a href="https://demontage24.ru/about/requisites/" class="info-link">Реквизиты</a>.</p></div>
+                    <div class="faq-answer"><p>Реквизиты доступны на странице <a href="/about/requisites/" class="info-link">Реквизиты</a>.</p></div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">Как с вами связаться?</button>
-                    <div class="faq-answer"><p>Для обсуждения демонтажа, вывоза мусора, расчёта стоимости или сотрудничества перейдите на страницу <a href="https://demontage24.ru/contacts/" class="info-link">«Контакты»</a>.</p></div>
+                    <div class="faq-answer"><p>Для обсуждения демонтажа, вывоза мусора, расчёта стоимости или сотрудничества перейдите на страницу <a href="/contacts/" class="info-link">«Контакты»</a>.</p></div>
                 </div>
 
             </div>
