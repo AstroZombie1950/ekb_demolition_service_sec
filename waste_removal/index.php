@@ -8,7 +8,7 @@
     <meta name="description" content="Вывоз строительного мусора в Екатеринбурге после демонтажа и ремонта. Быстро, аккуратно, с погрузкой и утилизацией. Контейнеры, Газели, спецтехника. Работаем без выходных. Звоните!">
     <meta name="keywords" content="вывоз мусора Екатеринбург, вывоз строительного мусора, вывоз мусора после демонтажа, вывоз мусора после ремонта, заказать вывоз мусора, контейнер для мусора Екатеринбург, утилизация строительного мусора">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/waste_removal">
+	<link rel="canonical" href="https://demontage24.ru/waste_removal">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

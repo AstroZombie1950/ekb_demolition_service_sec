@@ -8,7 +8,7 @@
 	<meta name="description" content="Профессиональные демонтажные работы в Екатеринбурге. Снос зданий, демонтаж квартир, стен, перегородок, вывоз мусора. Работаем быстро и безопасно.">
 	<meta name="keywords" content="демонтаж Екатеринбург, демонтажные работы, снос зданий, демонтаж квартиры, демонтаж стен, вывоз строительного мусора">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/">
+	<link rel="canonical" href="https://demontage24.ru/">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->
@@ -133,7 +133,7 @@
     <!--калькулятор-->
     <?php include 'include/calc.html'; ?>
     <!--улуги на демонтажные работы-->
-    <div class="section services">
+    <div class="section services" id="services">
         <div class="container">
             <h2 class="title fw3 tac mb fade_in"><span class="fwb">Услуги</span> на демонтажные работы</h2>
             <div class="services-list mb">

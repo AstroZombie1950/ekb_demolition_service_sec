@@ -8,7 +8,7 @@
     <meta name="description" content="Демонтаж пола в Екатеринбурге: снятие стяжки, ламината, паркета, плитки, деревянных и бетонных полов. Быстро, аккуратно, с вывозом мусора. Работаем по договору. Узнайте цену за м2.">
     <meta name="keywords" content="демонтаж пола Екатеринбург, демонтаж стяжки, снять ламинат, демонтаж паркета, демонтаж плитки, демонтаж бетонного пола, цена за м2, вывоз строительного мусора">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/floor">
+	<link rel="canonical" href="https://demontage24.ru/floor">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

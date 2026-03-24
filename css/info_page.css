@@ -1,0 +1,244 @@
+/* ===== общий контейнер инфо-страниц ===== */
+.info-container {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+}
+
+/* хлебные крошки */
+.info-breadcrumbs {
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 32px;
+}
+.info-breadcrumbs a {
+	color: #888;
+	text-decoration: none;
+}
+.info-breadcrumbs a:hover {
+	color: #f5a800;
+}
+.info-breadcrumbs span {
+	margin: 0 6px;
+}
+
+/* заголовок страницы */
+.info-title {
+	font-size: 36px;
+	font-weight: 900;
+	color: #1a1a1a;
+	margin-bottom: 8px;
+	line-height: 1.2;
+}
+
+/* подзаголовок */
+.info-subtitle {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 28px;
+}
+
+/* вводный абзац */
+.info-intro {
+	font-size: 15px;
+	line-height: 1.7;
+	color: #333;
+	margin-bottom: 16px;
+}
+
+/* блок раздела */
+.info-section {
+	margin-top: 36px;
+	padding-top: 28px;
+	border-top: 1px solid #ebebeb;
+}
+
+/* заголовок раздела */
+.info-section-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #1a1a1a;
+	margin-bottom: 16px;
+}
+
+/* абзацы внутри разделов */
+.info-section p {
+	font-size: 15px;
+	line-height: 1.7;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+/* списки */
+.info-list {
+	padding-left: 20px;
+	margin: 10px 0 16px;
+}
+.info-list li {
+	font-size: 15px;
+	line-height: 1.7;
+	color: #333;
+	margin-bottom: 6px;
+	list-style-type: disc;
+}
+
+/* блок реквизитов */
+.info-requisites {
+	background: #f7f7f7;
+	border-radius: 10px;
+	padding: 24px 28px;
+	border-top: none;
+	margin-top: 36px;
+}
+.info-requisites .info-section-title {
+	margin-bottom: 12px;
+}
+
+/* ===== адаптив ===== */
+@media (max-width: 768px) {
+	.info-title {
+		font-size: 26px;
+	}
+	.info-section-title {
+		font-size: 16px;
+	}
+	.info-container {
+		padding: 24px 16px 60px;
+	}
+}
+
+/* ===== типы cookie (страница cookie) ===== */
+.info-cookie-types {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-top: 16px;
+}
+.info-cookie-type {
+	background: #f7f7f7;
+	border-radius: 8px;
+	padding: 16px 20px;
+}
+.info-cookie-type__title {
+	font-weight: 700;
+	color: #1a1a1a;
+	margin-bottom: 6px !important;
+}
+
+/* ===== ссылки внутри текста ===== */
+.info-link {
+	color: #f5a800;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(245, 168, 0, 0.35);
+	transition: border-color 0.2s;
+}
+.info-link:hover {
+	border-color: #f5a800;
+}
+
+/* ===== таблица реквизитов ===== */
+.info-requisites-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 4px;
+}
+.info-requisites-row {
+	display: flex;
+	gap: 16px;
+}
+.info-requisites-label {
+	width: 260px;
+	flex-shrink: 0;
+	color: #888;
+	font-size: 15px;
+}
+.info-requisites-value {
+	font-size: 15px;
+	color: #1a1a1a;
+}
+
+/* список-ссылки без маркеров */
+.info-list--links {
+	list-style: none;
+	padding-left: 0;
+}
+.info-list--links li::before {
+	content: '→';
+	margin-right: 8px;
+	color: #f5a800;
+}
+
+/* адаптив реквизитов */
+@media (max-width: 768px) {
+	.info-requisites-row {
+		flex-direction: column;
+		gap: 4px;
+	}
+	.info-requisites-label {
+		width: auto;
+	}
+}
+
+/* ===== faq аккордеон ===== */
+.faq-list {
+	margin-top: 32px;
+}
+.faq-item {
+	border-bottom: 1px solid #ebebeb;
+}
+.faq-question {
+	width: 100%;
+	background: none;
+	border: none;
+	padding: 18px 40px 18px 0;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	cursor: pointer;
+	position: relative;
+	line-height: 1.4;
+	transition: color 0.2s;
+}
+.faq-question:hover {
+	color: #f5a800;
+}
+
+/* стрелка */
+.faq-question::after {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%) rotate(0deg);
+	width: 10px;
+	height: 10px;
+	border-right: 2px solid #f5a800;
+	border-bottom: 2px solid #f5a800;
+	transform: translateY(-65%) rotate(45deg);
+	transition: transform 0.25s;
+}
+.faq-item.active .faq-question::after {
+	transform: translateY(-35%) rotate(225deg);
+}
+.faq-item.active .faq-question {
+	color: #f5a800;
+}
+
+/* ответ — скрыт по умолчанию */
+.faq-answer {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s ease;
+}
+.faq-answer p {
+	font-size: 15px;
+	line-height: 1.7;
+	color: #333;
+	margin-bottom: 10px;
+}
+.faq-answer > p:last-child,
+.faq-answer > div:last-child {
+	padding-bottom: 18px;
+}

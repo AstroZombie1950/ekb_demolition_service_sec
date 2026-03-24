@@ -8,7 +8,7 @@
     <meta name="description" content="Профессиональный демонтаж потолка в Екатеринбурге: натяжные, подвесные, гипсокартонные, бетонные конструкции. Аккуратная разборка, вынос мусора, работа без повреждения стен. Узнайте стоимость за м².">
     <meta name="keywords" content="демонтаж потолка Екатеринбург, снять натяжной потолок, демонтаж подвесного потолка, демонтаж гипсокартонного потолка, демонтаж потолка цена, разборка потолка, убрать старый потолок">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/ceiling">
+	<link rel="canonical" href="https://demontage24.ru/ceiling">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

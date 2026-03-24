@@ -8,7 +8,7 @@
     <meta name="description" content="Отзывы клиентов о компании «Демонтаж Екатеринбург». Демонтаж квартир, домов, стен и перегородок в Екатеринбурге. Реальные мнения заказчиков о сроках, качестве и стоимости работ.">
     <meta name="keywords" content="демонтаж екатеринбург отзывы, отзывы о демонтаже квартир екатеринбург, демонтаж стен отзывы, демонтаж перегородок екатеринбург, компания демонтаж екатеринбург отзывы">
     <meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/reviews">
+	<link rel="canonical" href="https://demontage24.ru/reviews">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

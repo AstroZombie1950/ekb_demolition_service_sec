@@ -4,81 +4,95 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты — Демонтаж Екатеринбург | Телефон, WhatsApp, адрес</title>
-    <meta name="description" content="Контакты компании «Демонтаж Екатеринбург». Телефон, WhatsApp, адрес и время работы. Свяжитесь с нами для расчета стоимости демонтажных работ в Екатеринбурге и области.">
-    <meta name="keywords" content="демонтаж Екатеринбург контакты, телефон демонтаж Екатеринбург, демонтажные работы Екатеринбург, заказать демонтаж Екатеринбург, демонтаж квартир Екатеринбург, строительный демонтаж Екатеринбург">
+	<title>Реквизиты — Демонтаж Екатеринбург</title>
+	<meta name="description" content="Реквизиты ИП Ляхов Сергей. ОГРНИП 322237500042402, ИНН 234813866415. Демонтаж квартир, домов и вывоз мусора в Екатеринбурге.">
+	<meta name="keywords" content="реквизиты, ИНН, ОГРНИП, демонтаж Екатеринбург">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://demontage24.ru/contacts">
+	<link rel="canonical" href="https://demontage24.ru/about/requisites">
 	<!-- Robots -->
-	<meta name="robots" content="index, follow">
+	<meta name="robots" content="noindex, nofollow">
 	<!-- Favicon -->
-	<link rel="icon" type="image" href="../favicon.ico">
+	<link rel="icon" type="image" href="../../favicon.ico">
 	<!-- CSS -->
-    <link rel="stylesheet" id="style-css" href="../css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="new-css" href="../css/new.css" type="text/css" media="all">
-    <link rel="stylesheet" id="custom-style-css" href="../css/custom.css" type="text/css" media="all">
-    <link rel="stylesheet" id="slick-css" href="../css/portfolio_slider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="../css/modal_window.css" type="text/css" media="all">
+	<link rel="stylesheet" id="style-css" href="../../css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="new-css" href="../../css/new.css" type="text/css" media="all">
+	<link rel="stylesheet" id="custom-style-css" href="../../css/custom.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-css" href="../../css/portfolio_slider.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../../css/modal_window.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../../css/info_page.css" type="text/css" media="all">
 	<!-- jQuery -->
-    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" id="jquery-js"></script>
+	<script src="../../js/jquery-3.3.1.min.js" type="text/javascript" id="jquery-js"></script>
 </head>
 <body>
     <!-- main -->
     <div class="main" id="main">
         <?php include '../include/header.html'; ?>
     </div>
+    
     <!-- основной раздел -->
-    <div class="portfolio-page">
-        <div class="portfolio-page__container">
-            <div class="portfolio-page__breadcrumbs">
+    <div class="requisites-page">
+        <div class="info-container">
+
+            <!-- хлебные крошки -->
+            <div class="info-breadcrumbs">
                 <a href="/">Главная</a>
-                <span class="portfolio-page__separator">→</span>
-                <span>Контакты</span>
+                <span>→</span>
+                <span>Реквизиты</span>
             </div>
-            <h1 class="portfolio-page__title">Контакты</h1>
-            <!-- контакты и карта -->
-            <div class="contacts-con mlg2">
-                <div class="contacts-con__item">
-                    <div class="t10 green-label tac white mbm">Прием заявок ежедневно 9:00-21:00</div>
-                    <div class="mb2">
-                        <div class=""><a href="tel:+73435551100" class="t24 fwb tac dark">+7 (343) 555-11-00</a>
-                        </div>
+
+            <h1 class="info-title">Реквизиты</h1>
+
+            <p class="info-intro">На данной странице представлены реквизиты исполнителя для ознакомления, оформления документов и подтверждения деятельности.</p>
+
+            <!-- основная информация -->
+            <div class="info-section info-requisites">
+                <h2 class="info-section-title">Основная информация</h2>
+                <div class="info-requisites-grid">
+                    <div class="info-requisites-row">
+                        <span class="info-requisites-label">Индивидуальный предприниматель</span>
+                        <span class="info-requisites-value">Ляхов Сергей</span>
                     </div>
-                    <div class="online rel mbm">
-                        <div class="green-cr"></div>
-                        <div class="t15 green">Мы Online, спрашивайте</div>
+                    <div class="info-requisites-row">
+                        <span class="info-requisites-label">Вид деятельности</span>
+                        <span class="info-requisites-value">Индивидуальный предприниматель</span>
                     </div>
-                    <div class="items bott mb">
-                        <div class="t13 mr">Среднее время <br>ответа <span class="fwb">23 секунды</span></div>
-                        <a href="https://t.me/xxx" class="t13 fwb dark header-wa">
-                        <img src="../img/telegram_logo.png">Написать</a>
+                    <div class="info-requisites-row">
+                        <span class="info-requisites-label">ОГРНИП</span>
+                        <span class="info-requisites-value"><strong>322237500042402</strong></span>
                     </div>
-                    <div class="items mail mb2">
-                        <div class="items-img mr edit_ico">
-                            <img class=" lazyloaded" src="../img/icons/envelope.svg">
-                        </div>
-                        <div class="items-wr">
-                            <div class="t18 fwb">Почта:</div>
-                            <a href="mailto:tempmail@tempmail.com" class="dark t16">tempmail@tempmail.com</a>
-                        </div>
-                    </div>
-                    <div class="items mail adrs mb2">
-                        <div class="items-img mr edit_ico">
-                            <img class=" lazyloaded" src="../img/icons/location.svg">
-                        </div>
-                        <div class="items-wr">
-                            <div class="t18 fwb">Адрес:</div>
-                            <div class="dark t16">г. Екатеринбург<br>ул. Мира 25, оф 11<br>111111<br><br></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contacts-con__item mp">
-                    <div class="t18 tac mbm fwb">Наши объекты на карте Екатеринбурга</div>
-                    <div class="map" id="map">
-                        <img src="../img/map.png" alt="" class=" lazyloaded">
+                    <div class="info-requisites-row">
+                        <span class="info-requisites-label">ИНН</span>
+                        <span class="info-requisites-value"><strong>234813866415</strong></span>
                     </div>
                 </div>
             </div>
+
+            <!-- о деятельности -->
+            <div class="info-section">
+                <h2 class="info-section-title">О деятельности</h2>
+                <p>Основное направление — демонтаж квартир, частных домов и помещений, а также вывоз строительного мусора.</p>
+                <p>Ознакомиться с полным перечнем работ можно на странице <a href="https://demontage24.ru/services/" class="info-link">«Наши услуги»</a>.</p>
+            </div>
+
+            <!-- полезные разделы -->
+            <div class="info-section">
+                <h2 class="info-section-title">Полезные разделы сайта</h2>
+                <p>Для получения дополнительной информации вы можете перейти в соответствующие разделы:</p>
+                <ul class="info-list info-list--links">
+                    <li><a href="https://demontage24.ru/about/" class="info-link">О компании</a></li>
+                    <li><a href="https://demontage24.ru/partners/" class="info-link">Партнёрам</a></li>
+                    <li><a href="https://demontage24.ru/portfolio/" class="info-link">Портфолио</a></li>
+                    <li><a href="https://demontage24.ru/reviews/" class="info-link">Отзывы</a></li>
+                    <li><a href="https://demontage24.ru/faq/" class="info-link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- связь -->
+            <div class="info-section">
+                <h2 class="info-section-title">Связь</h2>
+                <p>По всем вопросам, связанным с услугами, сотрудничеством или документами, вы можете связаться через страницу <a href="https://demontage24.ru/contacts/" class="info-link">«Контакты»</a>.</p>
+            </div>
+
         </div>
     </div>
 

@@ -8,7 +8,7 @@
     <meta name="description" content="Профессиональный демонтаж квартиры под ключ в Екатеринбурге. Полный разбор перегородок, стяжки, плитки и сантехники. Бесплатный выезд и смета. Фиксированная цена без скрытых доплат. Вывоз мусора.">
     <meta name="keywords" content="демонтаж квартиры под ключ Екатеринбург, комплексный демонтаж квартиры, полный демонтаж перед ремонтом, демонтаж квартиры цена, демонтаж под ключ Екб">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/complex">
+	<link rel="canonical" href="https://demontage24.ru/complex">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

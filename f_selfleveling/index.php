@@ -8,7 +8,7 @@
     <meta name="description" content="Профессиональный демонтаж стяжки пола в Екатеринбурге. Быстрое удаление бетонной и цементной стяжки, вывоз мусора, работаем с квартирами и коммерческими помещениями. Цена за м², точный расчет за 30 минут.">
     <meta name="keywords" content="демонтаж стяжки Екатеринбург, демонтаж бетонной стяжки, снять стяжку пола цена, демонтаж цементной стяжки, демонтаж пола Екатеринбург, удаление стяжки, демонтаж старой стяжки, стоимость демонтажа стяжки">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/f_selfleveling">
+	<link rel="canonical" href="https://demontage24.ru/f_selfleveling">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->

@@ -8,7 +8,7 @@
     <meta name="description" content="Портфолио компании «Демонтаж Екатеринбург» — выполненные работы по демонтажу квартир, домов, перегородок, стен, полов и коммерческих помещений. Фото до и после. Работаем быстро, аккуратно и с вывозом мусора.">
     <meta name="keywords" content="портфолио демонтаж Екатеринбург, демонтаж квартир фото, демонтаж до и после, разбор стен Екатеринбург, демонтаж перегородок, демонтаж полов, демонтаж помещений, примеры работ демонтаж">
 	<meta name="author" content="Демонтаж Екатеринбург">
-	<link rel="canonical" href="https://example.ru/portfolio">
+	<link rel="canonical" href="https://demontage24.ru/portfolio">
 	<!-- Robots -->
 	<meta name="robots" content="index, follow">
 	<!-- Favicon -->
