@@ -25,7 +25,7 @@
 <body>
     <!-- main -->
     <div class="main" id="main">
-        <?php include '../include/header.html'; ?>
+        <?php include '../include/header.php'; ?>
     </div>
     <!-- основной раздел -->
     <div class="portfolio-page">

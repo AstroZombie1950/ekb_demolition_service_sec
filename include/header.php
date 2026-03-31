@@ -40,6 +40,7 @@
                 checkWidth();
             })
         </script>
+        
         <!--блоки над меню-->
         <header class="header">
             <div class="container-big header__cont">
@@ -132,17 +133,53 @@
                 </div>
                 <ul id="menu-osnovnoe-menju" class="nav t17">
                     <li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-80"><a href="/" aria-current="page">Главная</a></li>
-                    <li id="menu-item-4033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4033"><a href="#">Наши услуги</a>
-                        <ul class="sub-menu">
-                            <li><a href="/complex">Демонтаж квартиры под ключ</a></li>
-                            <li><a href="/ceiling">Демонтаж потолка</a></li>
-                            <li><a href="/walls">Демонтаж стен и перегородок</a></li>
-                            <li><a href="/floor">Демонтаж пола</a></li>
-                            <li><a href="/f_selfleveling">Демонтаж стяжки</a></li>
-                            <li><a href="/buildings">Демонтаж домов, строений и зданий</a></li>
-                            <li><a href="/waste_removal">Вывоз мусора с погрузкой</a></li>
-                        </ul>
-                    </li>
+
+					<?php
+				// получаем все услуги и группируем по категориям
+				if (!function_exists('getServicesData')) {
+					require_once $_SERVER['DOCUMENT_ROOT'] . '/include/sheets.php';
+				}
+				$services = getServicesData();
+
+				// порядок категорий в меню
+				$categoryOrder = [
+					'Демонтаж зданий и сооружений',
+					'Демонтаж фундаментов',
+					'Демонтаж внутренней отделки',
+					'Демонтаж внешней отделки',
+					'Демонтаж кровли',
+					'Демонтаж стен',
+					'Демонтаж коммуникаций',
+					'Окна и двери',
+					'Услуги демонтажа',
+				];
+
+				// группируем услуги по категории
+				$grouped = [];
+				foreach ($services as $slug => $s) {
+					$cat = trim($s['VAR_category'] ?? '');
+					if ($cat !== '') {
+						$grouped[$cat][] = ['slug' => $slug, 'label' => $s['VAR_breadcrumb'] ?? $slug];
+					}
+				}
+				?>
+				<li class="menu-item menu-item-has-children">
+					<a href="#">Наши услуги</a>
+					<ul class="sub-menu">
+						<?php foreach ($categoryOrder as $cat): ?>
+						<?php if (empty($grouped[$cat])) continue; ?>
+						<li class="menu-item menu-item-has-children">
+							<a href="#"><?= htmlspecialchars($cat) ?></a>
+							<ul class="sub-menu">
+								<?php foreach ($grouped[$cat] as $item): ?>
+								<li class="menu-item"><a href="/<?= htmlspecialchars($item['slug']) ?>"><?= htmlspecialchars($item['label']) ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</li>
+
                     <li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="/portfolio">Портфолио</a></li>
                     <li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="/reviews">Отзывы</a></li>
                     <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="/faq">FAQ</a></li>

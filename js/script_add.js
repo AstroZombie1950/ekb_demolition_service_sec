@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
-  /* f@eToN's custom select */
+  /* custom select */
     // Динамическая генерация кастомного селекта
     $('.faet-custom-select').each(function() {
       // Находим скрытый select
@@ -567,6 +567,24 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).append($optionsContainer);
     });
 
+    // ставим дефолтный пункт по slug страницы услуги
+    var slugMap = {
+      complex:        'Демонтаж квартиры под ключ',
+      buildings:      'Демонтаж домов, строений и зданий',
+      ceiling:        'Демонтаж потолка',
+      f_selfleveling: 'Демонтаж стяжки',
+      floor:          'Демонтаж пола',
+      walls:          'Демонтаж стен',
+      waste_removal:  'Вывоз строительного мусора',
+    };
+    var pageSlug     = window.location.pathname.split('/').filter(Boolean).pop();
+    var defaultValue = slugMap[pageSlug];
+    if (defaultValue) {
+      var $form = $('#mainForm');
+      $form.find('.faet-hidden-select').val(defaultValue);
+      $form.find('.faet-custom-select-trigger').text(defaultValue);
+    }
+
     $(document).on('click', '.faet-custom-select-trigger', function() { // Показываем или скрываем меню
       $(this).closest('.faet-custom-select').find('.faet-custom-options').toggle();
       console.log('clicked');
@@ -590,11 +608,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-setTimeout(function() {
-  $(document).find('.faet-custom-options').each(function() {
-    $(this).find('.faet-custom-option').first().click();
-  })
-}, 500);
   
 // ===== До/После в секции mini seo (без растягивания) =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -637,9 +650,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-
-
-
-

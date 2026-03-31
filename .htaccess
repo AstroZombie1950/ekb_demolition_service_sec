@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# статические файлы и существующие папки
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# все slug услуг (валидация на стороне PHP)
+RewriteRule ^([a-z0-9_-]+)/?$ /service.php?slug=$1 [L,QSA]
