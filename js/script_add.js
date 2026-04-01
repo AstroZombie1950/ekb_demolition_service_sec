@@ -32,15 +32,20 @@ $(document).ready(function ($) {
 	
 	let clickTimer;
 
-$(".header__menu-mobile.mobile li.menu-item-has-children > a").on("click", function(e) {
+// мобильное меню — вложенные уровни
+$(".header__menu-mobile li.menu-item-has-children > a").on("click", function(e) {
     e.preventDefault();
-    let $submenu = $(this).next(".sub-menu");
+    e.stopPropagation();
+    var $submenu = $(this).next(".sub-menu");
+    var $parentLi = $(this).parent();
+
     if ($submenu.is(":visible")) {
         $submenu.slideUp(200);
         $(this).removeClass("active");
     } else {
-        $(".header__menu-mobile .sub-menu").slideUp(200);
-        $(".header__menu-mobile a").removeClass("active");
+        // закрываем только соседей на том же уровне, не трогая родителей
+        $parentLi.siblings(".menu-item-has-children").children(".sub-menu").slideUp(200);
+        $parentLi.siblings(".menu-item-has-children").children("a").removeClass("active");
         $submenu.slideDown(200);
         $(this).addClass("active");
     }
@@ -461,47 +466,8 @@ item.addEventListener('input', () => {
 });
 }
 });
-document.addEventListener('DOMContentLoaded', function () {
-  // Только на мобильных
-  if (window.innerWidth <= 991) {
-    const nav = document.querySelector('.nav'); // это ul.nav.t17
 
-    if (nav) {
-      nav.addEventListener('click', function (e) {
-        const target = e.target;
-
-        // Если клик по ссылке внутри .menu-item-has-children
-        if (target.closest('.menu-item-has-children > a')) {
-          const parentLi = target.closest('.menu-item-has-children');
-
-          if (parentLi) {
-            e.preventDefault(); // блокируем переход
-            parentLi.classList.toggle('open');
-          }
-        }
-      });
-    }
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const menuItems = document.querySelectorAll('.menu-item-has-children');
-
-  menuItems.forEach(function (item) {
-    const link = item.querySelector('a');
-
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      if (item.classList.contains('open')) {
-        item.classList.remove('open');
-      } else {
-        // Закрыть все
-        document.querySelectorAll('.menu-item-has-children').forEach(el => el.classList.remove('open'));
-        item.classList.add('open');
-      }
-    });
-  });
+$(document).ready(function() {
 
   $('.numericPlus').on('click', function() {
     let input = $(this).closest('.faetNumericInputWrp').find('input[type="number"]');

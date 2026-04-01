@@ -2,7 +2,7 @@
 
 define('SHEETS_API_KEY',  'AIzaSyCsG7dAlJsHkQflHRXdFRgdSFUQYpUIrHY');
 define('SHEETS_ID',       '1QEYqWdBOY7s5gBMyfYjUnhhbGIVz9mnGT2gPSO9me_s');
-define('SHEETS_RANGE',    'A1:AA20');
+define('SHEETS_RANGE',    'A1:AA250');
 define('CACHE_FILE',      __DIR__ . '/../cache/services.json');
 define('CACHE_TTL',       86400); // 24 часа
 
