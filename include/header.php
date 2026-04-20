@@ -33,13 +33,18 @@ ym(107147479,'init',{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
 @media (max-width: 900px) { .header { display: none !important; } }
 
 /* навбар */
-.dmnt-bar { position: absolute; top: 110px; left: 0; width: 100%; z-index: 500; }
-.dmnt-bar.is-sticky { position: fixed; top: 0; }
+.dmnt-bar { position: relative; top: 0; left: 0; width: 100%; z-index: 500; }
+.dmnt-bar.is-sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 .dmnt-bar__inner {
 	max-width: 90rem; margin: 0 auto; padding: 0 2rem;
 	display: flex; align-items: center; justify-content: center;
 	background: #fff; border-radius: 1rem;
-	box-shadow: 0 0 120px rgba(40,40,40,0.1); min-height: 56px;
+	box-shadow: 0 0 120px rgba(40,40,40,0.1); min-height: 35px;
 }
 
 /* десктопная навигация */
@@ -285,15 +290,17 @@ window.DMNT_MENU = <?php
 	var data     = window.DMNT_MENU || [];
 
 	/* sticky */
-	window.addEventListener('scroll', function() {
-		if (window.scrollY > 110) {
-			bar.classList.add('is-sticky');
-			if (window.innerWidth > 900 && mobLogo) mobLogo.style.display = 'block';
-		} else {
-			bar.classList.remove('is-sticky');
-			if (window.innerWidth > 900 && mobLogo) mobLogo.style.display = 'none';
-		}
-	}, {passive: true});
+var header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+	var headerHeight = header ? header.offsetHeight : 0;
+
+	if (window.scrollY > headerHeight) {
+		bar.classList.add('is-sticky');
+	} else {
+		bar.classList.remove('is-sticky');
+	}
+});
 
 	/* рендер */
 	function renderCats() {
